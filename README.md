@@ -43,7 +43,7 @@ Created new src folder which includes enviorment setup and backend enabled for o
 
 # Task Completed
 
-- Login/Logout with manual inputs completed
+- Login/Signup with manual inputs completed
 - Real time chat with front-end and backend completed
 - Backend for post completed
 - Global styles created which we can use if we need it
@@ -53,3 +53,4 @@ Created new src folder which includes enviorment setup and backend enabled for o
 - Front-end for posts
 - Needs to improve profile page for front-end
 - Friends list
+- Logout Feature
