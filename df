@@ -1,0 +1,98 @@
+[33mcommit cc4ac945ef1941d862195573ddab9bbb4acd57d4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 23:11:34 2021 +0530
+
+    Rename script.js to script.css
+
+[33mcommit 14e5e1908dcfcbab180faa15227a1ef94a76da72[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 23:11:14 2021 +0530
+
+    Create Sign Up.css
+
+[33mcommit e1eac7ea1654f7194d794bd01d92444daeb81db6[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 23:09:47 2021 +0530
+
+    Add files via upload
+    
+    Image for sign up with google.
+
+[33mcommit 5f86592bfddc286d799e950e99a8ae2ca313bbdc[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 23:08:01 2021 +0530
+
+    Update Sign Up.html
+
+[33mcommit 8d5c0f50a25555de7e7bdac04e88d36824079f80[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:55:04 2021 +0530
+
+    Rename Sign Up to Sign Up.html
+
+[33mcommit 6408350b73a91a53c9457dd22d91ac90cf10806f[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:54:49 2021 +0530
+
+    Create Sign Up
+
+[33mcommit 368e0abf336fd8e4500a7e8e2b4d84da37f36fec[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:54:25 2021 +0530
+
+    Update index.html
+
+[33mcommit 4a28c855a4b2e21df292db6898f28cec6e0bf27e[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:54:07 2021 +0530
+
+    Update index.html
+
+[33mcommit 8b5920d552530b75964076681642b419b8ce0eff[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:15:54 2021 +0530
+
+    Update script.js
+    
+    CSS file for Login
+
+[33mcommit a4ddf291f3eff417339477712cad6143b8013327[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:15:05 2021 +0530
+
+    Add files via upload
+    
+    Background Image for Login page
+
+[33mcommit c5f60f8aa651f8564d1bbe98e6c7794fb052c92e[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:13:47 2021 +0530
+
+    Update index.html
+    
+    Login Page
+
+[33mcommit 1dba654e0979a7e94922ec69d74fb029db9d35fb[m
+Merge: b8bd539 7f131b9
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Fri Oct 1 13:03:56 2021 +0530
+
+    Merge branch 'main' of https://github.com/varendra007/SSL-Project
+
+[33mcommit b8bd53903290e993b5cc15c7a8c0c3d1f4f40f87[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Fri Oct 1 13:00:34 2021 +0530
+
+    chat and prfile page complete
+
+[33mcommit 7f131b9ac97d01133e1a7f7a754246007f7a0167[m
+Author: Varendra Maurya <88757164+varendra007@users.noreply.github.com>
+Date:   Thu Sep 30 10:00:05 2021 +0530
+
+    created README file
+
+[33mcommit ff73c56c047dc351db43e8708771011788a13de6[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Thu Sep 30 09:45:49 2021 +0530
+
+    project initialize

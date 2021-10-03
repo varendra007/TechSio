@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 /* custom scroll bar */
@@ -46,7 +48,7 @@
 }
 
 .box {
-	/* width: 100px; */
+	width: 1000px;
 	height: 600px;
 	border-radius: 5px;
 	box-shadow: var(--shadow);
@@ -60,11 +62,10 @@
 }
 
 .left {
-	/* width: 280px; */
-	width: 100%;
+	width: 280px;
 	height: 600px;
 	border-color: var(--c);
-	/* border-right: 1px solid var(--c); */
+	border-right: 1px solid var(--c);
 }
 
 .right {
@@ -91,11 +92,9 @@
 }
 
 .lens {
-	/* background: greenyellow; */
-	/* padding: 50x; */
-	/* border-radius: 50px; */
-	/* height: 50px; */
-	/* width: 100%; */
+	background: greenyellow;
+	padding: 50x;
+	border-radius: 50px;
 }
 
 .search__icon {
@@ -132,6 +131,14 @@ li {
 	border-bottom: 1px solid var(--c);
 	transition: o.5s ease;
 }
+.frnd {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	justify-content: space-between;
+	/* border-bottom: 1px solid var(--c); */
+	transition: o.5s ease;
+}
 
 .img__name {
 	display: flex;
@@ -156,7 +163,7 @@ h3 {
 }
 
 .friend:hover {
-	background-color: var(--c);
+	/* background-color: rgba(0, 0, 0, 0.1); */
 	cursor: pointer;
 }
 

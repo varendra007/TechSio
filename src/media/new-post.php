@@ -17,8 +17,12 @@
     <div class="background-image"></div>
     <!-- header -->
     <div class="header">
-        <a href="../index.php">SIGNUP</a>
-        <a href="login.php">SIGNIN</a>
+       <div class="header">
+        <!-- <h3>kasdf</h3> -->
+        <a href="../chat/contacts.js">CONTACTS</a>
+        <a href="../profile/index.php">PROFILE</a>
+
+    </div>
 
     </div>
 
@@ -30,7 +34,8 @@
         </header>
         <div class="form" style="display: flex; width: 100%; justify-content: center;">
 
-            <form action="#" enctype="multipart/form-data" style="width: 100%;">
+            <form action="#" class="new-post__form" enctype="multipart/form-data" style="width: 100%;">
+            <div class="error-text post__error-text" >This is an error message!</div>
                 <div class="field">
                     <label for="">Select Image<font style="color: red;">*</font></label>
                     <input type="file" name="image" class="select-image" required>

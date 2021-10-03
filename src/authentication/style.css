@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #f7f7f7;
+}
+input {
+	outline: none;
+}
+.wrapper {
+	background: #fff;
+	width: 450px;
+	border-radius: 16px;
+	box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+		0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+/* Signup form  */
+.form {
+	padding: 25px 30px;
+}
+.form header {
+	font-size: 25px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	border-bottom: 1px solid#e6e6e6;
+}
+.form form {
+	margin: 20px 0;
+}
+.form form .error-text {
+	color: #721c24;
+	background: #f8d7da;
+	padding: 4px 10px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid;
+	display: none;
+}
+
+.form form .field {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 10px;
+}
+.form form .input input {
+	height: 40px;
+	width: 100%;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+.form form .name-details {
+	display: flex;
+	justify-content: space-between;
+}
+.form form .name-details .field:first-child {
+	margin-right: 10px;
+}
+.form form .name-details .field:last-child {
+	margin-left: 10px;
+}
+.password i {
+	position: absolute;
+	right: 15px;
+	top: 70%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}

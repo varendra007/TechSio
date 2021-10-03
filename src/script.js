@@ -11,7 +11,7 @@ submitBtn.addEventListener('click', function (e) {
 	// HIGHLIGHT AJAX
 	let xhr = new XMLHttpRequest(); // creating XML object
 
-	xhr.open('POST', '../', true);
+	xhr.open('POST', './backend/authentication/signup.php', true);
 
 	xhr.onload = () => {
 		if (xhr.readyState === XMLHttpRequest.DONE) {
