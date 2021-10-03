@@ -5,12 +5,14 @@ Social media
 # HIGHLIGHT
 
 Clone your folder inside htdocs folder and then inside backend folder create new folder 'images' and inside images create another new folde 'posts'.
+
 starting file src/index.php
 
 # Database
 
 For now we need to create Database manully...
 Create Database name chat and some tables as described below:
+
 users: id(int), unique_id(int), fname(varchar (250)), lname(varchar (250)), email(varchar (250)),password(varchar (250)), image(varchar (1000)), status(varchar(250));
 
 posts: post_id(int), user_id(int 255), image(varchar 255), likes(int), comment(varchar 500);
