@@ -63,7 +63,6 @@
                 <div class="field">
                     <input type="submit" value="Continue to Chat" class="signup__btn__submit">
                 </div>
-                <img src="Sign Up_google.jpg" style="opacity: 1;" alt="Sign In with Google" height="55px" width="250px">
 
             </form>
             <div class="link">Already signed up? <a href="./authentication/login.php">Login now</a></div>
