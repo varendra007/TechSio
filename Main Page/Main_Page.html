@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="Sample.css">
+    <script src="https://kit.fontawesome.com/cc5f467dfb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left"> <!--nav left starts-->
+            <img src="TechSio.png" height= "150px" width="200px" class="logo" alt="Company Logo">
+            <ul>
+                <li><img src="Images/notification.png"alt="Notifications"></li>
+                <li><img src="Images/inbox.png" alt="Inbox"></li>
+                <li><img src="Images/message.png" alt="Message"></li>
+            </ul>
+        </div>
+        <div class="nav-right"> <!--Nav right starts-->
+            <div class="search-box">
+                <img src="Images/search.png" alt="Search Bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="Images/profile-pic.jpg" height="70px">
+            </div>
+        </div>
+
+        <div class="settings-menu"> <!--Settings menu starts-->
+
+            <div id="dark-btn"> <!--Dark btn starts-->
+                <span></span>
+            </div>   <!--Dark btn ends-->
+
+
+            <div class="settings-menu-inner"> <!--Settings menu Inner  starts-->
+
+                <div class="user-profile"> <!--User profile starts-->
+                    <img src="Images/profile-pic.jpg">
+                    <div>
+                       <p> User </p><br>
+                       <a href="#">Profile</a>
+                    </div> 
+                </div> <!--User profile ends-->
+                <hr>
+                <div class="user-profile"> <!--User profile starts-->
+                    <img src="Images/feedback.png">
+                    <div>
+                       <p> FeedBack </p><br>
+                       <a href="#">Help us to Improve</a>
+                    </div>
+                </div> <!--User profile ends-->
+                <hr>
+
+                <div class="settings-links"> <!--Setting links starts-->
+                    <img src="Images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="Images/arrow.png" width="10px"></a>
+                </div> <!--Setting links ends-->
+
+                <div class="settings-links"> <!--help starts-->
+                    <img src="Images/help.png" class="settings-icon">
+                    <a href="#">Help <img src="Images/arrow.png" width="10px"></a>
+                </div> <!--help ends-->
+
+                <div class="settings-links"> <!--Display starts-->
+                    <img src="Images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibilty <img src="Images/arrow.png" width="10px"></a>
+                </div> <!--Display ends-->
+
+                <div class="settings-links"> <!--Logout starts-->
+                    <img src="Images/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="Images/arrow.png" width="10px"></a>
+                </div> <!--Logout ends-->
+
+
+            </div> <!--Settings menu inner ends-->
+
+        </div> <!--Settings menu ends-->
+
+    </nav>
+<div class="container"> <!--Container Starts -->
+
+    <div class="left-sidebar"> <!--Left-sidebar Starts-->
+        <div class="imp-links">
+            <a href="https://indianexpress.com/section/trending/"><img src="Images/news.png" alt="Trending News">Latest News</a>
+            <a href="#"><img src="Images/friends.png" alt="Friends">Friends</a>
+            <a href="#"><img src="Images/group.png" alt="Group">Group</a>
+            <a href="#"><img src="Images/marketplace.png" alt="Market Place">Market Place</a>
+            <a href="#"><img src="Images/watch.png" alt="Watch">Watch</a>
+            <a href="#">More</a>
+        </div>
+
+        <div class="shortcut-links">
+            <p>Shortcuts</p>
+            <a href="#"><img src="Images/shortcut-1.png">Stories</a>
+            <a href="#"><img src="Images/shortcut-2.png">Posts</a>
+            <a href="#"><img src="Images/shortcut-3.png">Contact Details</a>
+            <a href="#"><img src="Images/shortcut-4.png">History management</a>
+        </div>
+
+
+    </div> <!--Left-sidebar Ends-->
+
+
+    <div class="main-content"> <!--Main content starts-->
+
+        <div class="story-gallery"><!--Story Gallery Starts-->
+
+
+            <div class="story story1">
+                <img src="Images/upload.png">
+                <p>Upload a new story</p>
+            </div>
+
+            <div class="story story2">
+                <img src="Images/member-1.png">
+                <p>Friend-1</p>
+            </div>
+
+            <div class="story story3">
+                <img src="Images/member-2.png">
+                <p>Friend-2</p>
+            </div>
+
+            <div class="story story4">
+                <img src="Images/member-3.png">
+                <p>Friend-3</p>
+            </div>
+
+            <div class="story story5">
+                <img src="Images/member-4.png">
+                <p>Friend-4</p>
+            </div>
+
+
+        </div> <!--Story gallery ends-->
+
+        <div class="write-post-container"> <!--Write post container Starts-->
+            <div class="user-profile"> <!--User profile starts-->
+                <img src="Images/profile-pic.jpg">
+                <div>
+                   <p> User </p><br>
+                   <small>Public <i class="fas fa-sort-down"></i></small>
+                </div>
+            </div> <!--User profile ends-->
+            <div class="post-input-container"> <!--Post input container starts-->
+                <textarea rows="3" placeholder="Share Your Thoughts"></textarea>
+                <div class="add-post-links"> <!--add post links starts-->
+                    <a href="#"><img src="Images/live-video.png">Live Video</a>
+                    <a href="#"><img src="Images/photo.png">Photo/Video</a>
+                    <a href="#"><img src="Images/feeling.png">Emojis</a>
+                </div><!--add post links ends-->
+
+            </div> <!--Post input container ends-->
+        </div> <!--Write post container end-->
+
+        <div class="post-container"> <!--post container starts-->
+            <div class="post-row"> <!--post row starts-->
+
+            <div class="user-profile"> <!--User profile starts-->
+                <img src="Images/profile-pic.jpg">
+                <div>
+                   <p> User </p><br>
+                   <span>6 th October 2021</span>
+                </div>
+            </div> <!--User profile ends-->
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div> <!--post row ends-->  
+
+                <p class="post-text">My post <span>Work-life</span>
+                <a href="#"> Microsoft   <i class="fas fa-caret-down"> </i></a></p>
+                <img src="Images/feed-image-1.png" class="post-img">
+
+
+                <div class="post-row"> <!--Post row starts-->
+                    <div class="activity-icons"> <!--Activity icon Starts-->
+                        <div><img src="Images/like-blue.png">120</div>
+                        <div><img src="Images/comments.png">40</div>
+                        <div><img src="Images/share.png">10</div>
+                    </div> <!--Activity icons ends-->
+
+                    <div class="post-profile-icon"> <!--post profile icon starts-->
+                        <img src="Images/profile-pic.jpg"><i class="fas fa-caret-down"></i>
+                    </div> <!--Post profile icon ends-->
+                </div> <!--Post row ends-->
+        </div> <!--post container ends-->
+
+        <div class="post-container"> <!--Post container starts-->
+            <div class="post-row"> <!--post row starts-->
+
+                <div class="user-profile"> <!--User profile starts-->
+                    <img src="Images/profile-pic.jpg">
+                    <div>
+                       <p> User </p><br>
+                       <span>2 nd October 2021</span>
+                    </div>
+                </div> <!--User profile ends-->
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div> <!--post row ends-->
+            
+            <p class="post-text">Vacation memory</b></p>
+            <img src="Images/feed-image-2.png" class="post-img">
+            <div class="post-row"> <!--Post row starts-->
+                <div class="activity-icons"> <!--Activity icon Starts-->
+                    <div><img src="Images/like.png">1k</div>
+                    <div><img src="Images/comments.png">350</div>
+                    <div><img src="Images/share.png">100</div>
+                </div> <!--Activity icons ends-->
+                <div class="post-profile-icon"> <!--post profile icon starts-->
+                    <img src="Images/profile-pic.jpg"><i class="fas fa-caret-down"></i>
+                </div> <!--Post profile icon ends-->
+            </div> <!--Post row ends-->
+        </div> <!-- post container ends-->
+
+        <div class="post-container"> <!--Post container starts-->
+            <div class="post-row"> <!--post row starts-->
+
+                <div class="user-profile"> <!--User profile starts-->
+                    <img src="Images/profile-pic.jpg">
+                    <div>
+                       <p> User </p><br>
+                       <span>3rd October 2021</span>
+                    </div>
+                </div> <!--User profile ends-->
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div> <!--post row ends-->
+            
+            <p class="post-text">Work from home</b></p>
+            <img src="Images/feed-image-3.png" class="post-img">
+            <div class="post-row"> <!--Post row starts-->
+                <div class="activity-icons"> <!--Activity icon Starts-->
+                    <div><img src="Images/like.png">2k</div>
+                    <div><img src="Images/comments.png">255</div>
+                    <div><img src="Images/share.png">65</div>
+                </div> <!--Activity icons ends-->
+                <div class="post-profile-icon"> <!--post profile icon starts-->
+                    <img src="Images/profile-pic.jpg"><i class="fas fa-caret-down"></i>
+                </div> <!--Post profile icon ends-->
+            </div> <!--Post row ends-->
+        </div> <!-- post container ends-->
+
+        <div class="post-container"> <!--Post container starts-->
+            <div class="post-row"> <!--post row starts-->
+
+                <div class="user-profile"> <!--User profile starts-->
+                    <img src="Images/profile-pic.jpg">
+                    <div>
+                       <p> User </p><br>
+                       <span>4th October 2021</span>
+                    </div>
+                </div> <!--User profile ends-->
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div> <!--post row ends-->
+            
+            <p class="post-text">Vacation memory</b></p>
+            <img src="Images/feed-image-4.png" class="post-img">
+            <div class="post-row"> <!--Post row starts-->
+                <div class="activity-icons"> <!--Activity icon Starts-->
+                    <div><img src="Images/like.png">122</div>
+                    <div><img src="Images/comments.png">4</div>
+                    <div><img src="Images/share.png">15</div>
+                </div> <!--Activity icons ends-->
+                <div class="post-profile-icon"> <!--post profile icon starts-->
+                    <img src="Images/profile-pic.jpg"><i class="fas fa-caret-down"></i>
+                </div> <!--Post profile icon ends-->
+            </div> <!--Post row ends-->
+        </div> <!-- post container ends-->
+
+        <div class="post-container"> <!--Post container starts-->
+            <div class="post-row"> <!--post row starts-->
+
+                <div class="user-profile"> <!--User profile starts-->
+                    <img src="Images/profile-pic.jpg">
+                    <div>
+                       <p> User </p><br>
+                       <span>29th September 2021</span>
+                    </div>
+                </div> <!--User profile ends-->
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div> <!--post row ends-->
+            
+            <p class="post-text">Vacation memory</b></p>
+            <img src="Images/feed-image-5.png" class="post-img">
+            <div class="post-row"> <!--Post row starts-->
+                <div class="activity-icons"> <!--Activity icon Starts-->
+                    <div><img src="Images/like.png">4k</div>
+                    <div><img src="Images/comments.png">300</div>
+                    <div><img src="Images/share.png">432</div>
+                </div> <!--Activity icons ends-->
+                <div class="post-profile-icon"> <!--post profile icon starts-->
+                    <img src="Images/profile-pic.jpg"><i class="fas fa-caret-down"></i>
+                </div> <!--Post profile icon ends-->
+            </div> <!--Post row ends-->
+        </div> <!-- post container ends-->
+        
+        <button type="button" class="load-more-btn">Load More</button>
+
+    </div> <!--Main content ends-->
+
+
+    <div class="right-sidebar"> <!--Right side bar starts-->
+
+        <div class="sidebar-title">
+            <h3>Events</h3>
+            <a href="#">See All</a>
+        </div>
+
+        <div class="event"> <!--event starts-->
+
+            <div class="left-event">
+                <h3>26</h3>
+                <span>January</span>
+            </div>
+            <div class="right-event">
+                <h3>Republic Day</h3>
+                <p><i class="fas fa-map-marker-alt"></i>IIT Dharwad</p>
+                <a href="https://www.iitdh.ac.in/">Click Here to Visit</a>
+            </div>
+
+        </div> <!--Event ends-->
+
+        <div class="event"> <!--event starts-->
+
+            <div class="left-event">
+                <h3>15</h3>
+                <span>August</span>
+            </div>
+
+            <div class="right-event">
+                <h3>Independence Day</h3>
+                <p><i class="fas fa-map-marker-alt"></i>IIT Dharwad</p>
+                <a href="https://www.iitdh.ac.in/">Click Here to Visit</a>
+            </div>
+        </div> <!--event ends-->
+
+        <div class="sidebar-title"> <!--sidebar title starts-->
+            <h4>Advertisement</h4>
+            <a href="#">Close</a>
+        </div> <!--Side bar title ends-->
+        <img src="Images/advertisement.png" class="sidebar-ads">
+
+        <div class="sidebar-title"> <!--Sidebar title starts-->
+            <h4>Friends</h4>
+            <a href="#">Hide Chat</a>
+        </div> <!--Sidebar title ends-->
+
+        <div class="online-list"> <!--Friend 1 Starts-->
+            <div class="online">
+                <img src="images/member-1.png">
+            </div>
+            <p>Friend-1</p>
+        </div><!--Friend 1 Ends-->
+
+        <div class="online-list"><!--Friend 2 Starts-->
+            <div class="online"> 
+                <img src="images/member-2.png">
+            </div>
+            <p>Friend-2</p>
+        </div> <!--Friend 2 Ends-->
+
+        <div class="online-list"> <!--Friend 3 Starts-->
+            <div class="online">
+                <img src="images/member-3.png">
+            </div>
+            <p>Friend-3</p>
+        </div><!--Friend 3 Ends-->
+
+    </div> <!--Right side bar ends-->
+
+</div> <!--Container Ends-->
+
+    <div class="footer"> <!--footer starts-->
+        <p> Copyright 2021 - TechSio Social Media Site </p>
+    </div> <!--footer ends-->
+
+    <script src="Main Page.js"></script>
+
+</body>
+</html>
