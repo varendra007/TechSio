@@ -81,14 +81,14 @@
 	color: #fff;
 }
 body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	/* display: flex; */
+	/* align-items: center; */
+	/* justify-content: center; */
 	min-height: 100vh;
-	background-color: #f7f7f7;
+	background-color: #efefef;
 }
 
-.media__screen {
+/* .media__screen {
 	background: #fff;
 	width: 600px;
 	border-radius: 16px;
@@ -104,7 +104,7 @@ body {
 	margin: auto;
 	height: 600px;
 	overflow: auto;
-}
+} */
 .gradient-text {
 	background-image: linear-gradient(
 		to bottom right,

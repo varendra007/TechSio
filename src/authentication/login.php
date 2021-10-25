@@ -22,6 +22,7 @@
         <!-- <h3>kasdf</h3> -->
         <a href="../index.php">SIGNUP</a>
         <a href="login.php">SIGNIN</a>
+        <a href="../media/new-post.php"></a>
 
     </div>
 

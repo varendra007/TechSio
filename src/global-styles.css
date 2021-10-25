@@ -73,3 +73,18 @@
 .link {
 	cursor: pointer !important;
 }
+
+.button {
+	padding: 6px;
+	font-size: 1em;
+	font-weight: 500;
+	color: #fff;
+	background: var(--grad);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.button:hover,
+.button:hover {
+	background: var(--gradh);
+}

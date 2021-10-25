@@ -18,7 +18,7 @@ submitBtn.addEventListener('click', function (e) {
 			if (xhr.status === 200) {
 				let data = xhr.response;
 				if (data == 'success') {
-					location.href = './chat/contacts.php'; // TODO wil change later for direct to home page
+					location.href = './main-page/main-page.php'; // TODO wil change later for direct to home page
 				} else {
 					errText.textContent = data;
 					errText.style.display = 'block';

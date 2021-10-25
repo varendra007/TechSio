@@ -46,10 +46,10 @@
                         $time = time(); // this will return current time
                         // TODO we'll use this time to rename user image with this name so that image name remains unique HIGHLIGHT may be wrong
 
-                        $new_image_name = $img_name.$time; // changing imagename
+                        $new_image_name = $time.$img_name; // changing imagename
 
                         // now storing userImage to images folder
-                        if(move_uploaded_file($temp_name, "./images/".$new_image_name)){
+                        if(move_uploaded_file($temp_name, "../images/".$new_image_name)){
                             //  we successfully stored userImage in respective folder
                             $status = "Active now"; // TODO when user will signup he will be active since we also logged user in after signup
                             $random_id = rand(1, 100000000); // creating random user id valid for small scale only

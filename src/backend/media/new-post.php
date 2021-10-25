@@ -23,15 +23,16 @@
                 $time = time(); // this will return current time
                 // TODO we'll use this time to rename user image with this name so that image name remains unique HIGHLIGHT may be wrong
 
-                $new_image_name = $img_name.$time.$_SESSION['unique_id']; // changing imagename
+                $new_image_name = $time.$_SESSION['unique_id'].$img_name; // changing imagename
                 $zero = 0;
+                $current_date = date("Y/m/d");
                 
                 // now storing userImage to images folder
                 if(move_uploaded_file($temp_name, "../images/post/".$new_image_name)){
                     $user_id = $_SESSION['unique_id'];
 
-                    $sql = "INSERT INTO posts (user_id, image, likes, comment) 
-                            VALUES('{$user_id}', '{$new_image_name}', '{$zero}', '{$comment}')";
+                    $sql = "INSERT INTO posts (user_id, image, likes, comment, date) 
+                            VALUES('{$user_id}', '{$new_image_name}', '{$zero}', '{$comment}','{$current_date}')";
                     if($conn->query($sql)){ 
                         echo "success";
                     }else{

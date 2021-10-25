@@ -41,6 +41,7 @@
         <!-- <h3>kasdf</h3> -->
         <a href="../media/new-post.php">NEW POST</a>
         <a href="../profile/index.php">PROFILE</a>
+        <a href="../main-page/main-page.php">HOME</a>
 
     </div>
 

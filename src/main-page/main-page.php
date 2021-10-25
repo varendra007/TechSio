@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link rel="stylesheet" href="Main_Page.css">
+    <link rel="stylesheet" href="../global-styles.css">
     <script src="https://kit.fontawesome.com/cc5f467dfb.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="../src/global-styles.css"> -->
     <style>
@@ -53,6 +54,30 @@
             padding: 10px 15px;
             border-radius: 5px;
             width: 220px;
+        }
+        .button {
+            width: 100%;
+            padding: 6px;
+            font-size: 1em;
+            font-weight: 500;
+            color: #fff;
+            background: linear-gradient(to bottom right, #f88bf8, #9141e2);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            
+        }
+        .button a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .button:hover,
+        .button:hover {
+            background: linear-gradient(to bottom right, #f88bf8, #9141e2);
+        }
+        .main-page__add-new-post-btn{
+            width: 100%;
         }
 
     </style>
@@ -103,7 +128,7 @@
                 <div class="settings-menu-inner">
                     <!--Settings menu Inner  starts-->
 
-                    <a href="#">
+                    <a href="../profile/profile-page.php">
                         <div class="user-profile">
                             <!--User profile starts-->
                             <img src="../backend/images/<?php echo $row['image']; ?>" class="avtar">
@@ -176,11 +201,10 @@
             <div class="left-sidebar" style="overflow-x: auto; height: 100%;">
                 <!-- <div style="height: 200px; width: 100%; color: red;"></div> -->
 
-                <!--Left-sidebar Starts-->
+                <!--Left-sidebar Starts HIGHLIGHT-->
                 <div class="imp-links">
-                    <a href="https://indianexpress.com/section/trending/"><img src="Images/news.png"
-                            alt="Trending News">Latest News</a>
-                    <a href="#"><img src="Images/friends.png" alt="Friends">Friends</a>
+                    <a href="https://indianexpress.com/section/trending/"><img src="Images/news.png" alt="Trending News">Latest News</a>
+                    <a href="../friends-overview/index.php"><img src="Images/friends.png" alt="Friends">Friends</a>
                     <a href="#"><img src="Images/group.png" alt="Group">Group</a>
                     <a href="#"><img src="Images/marketplace.png" alt="Market Place">Market Place</a>
                     <a href="#"><img src="Images/watch.png" alt="Watch">Watch</a>
@@ -191,7 +215,7 @@
                     <p>Shortcuts</p>
                     <!-- <a href="#"><img src="Images/shortcut-1.png">Stories</a> -->
                     <a href="#"><img src="Images/shortcut-2.png">Posts</a>
-                    <a href="#"><img src="Images/shortcut-3.png">Contact Details</a>
+                    <a href="../chat/contacts.php"><img src="Images/shortcut-3.png">Contact Details</a>
                     <a href="#"><img src="Images/shortcut-4.png">History management</a>
                 </div>
 
@@ -224,14 +248,21 @@
                     <!--User profile ends-->
                     <div class="post-input-container">
                         <!--Post input container starts-->
-                        <textarea rows="3" placeholder="Share Your Thoughts"></textarea>
+                        <!-- <textarea rows="3" placeholder="Share Your Thoughts"></textarea>
                         <div class="add-post-links">
-                            <!--add post links starts-->
                             <a href="#"><img src="Images/live-video.png">Live Video</a>
                             <a href="#"><img src="Images/photo.png">Photo/Video</a>
                             <a href="#"><img src="Images/feeling.png">Emojis</a>
+                        </div> -->
+                        <div class = "button">
+
+                            <a href="../media/new-post.php"  class = "main-page__add-new-post-btn" style = "width: 100%;">
+                            <div style = "width: 100%;">NEW POST
+
+                            </div>
+                            </a>
                         </div>
-                        <!--add post links ends-->
+
 
                     </div>
                     <!--Post input container ends-->
@@ -240,202 +271,41 @@
                 ?> 
                 </div>
                 <!--Write post container end-->
+                <div class = "main-page__posts">
+                    <!-- <div class="post-container">
+                        <div class="post-row">
 
-                <div class="post-container">
-                    <!--post container starts-->
-                    <div class="post-row">
-                        <!--post row starts-->
+                            <div class="user-profile">
+                                <img src="Images/profile-pic.png">
+                                <div>
+                                    <p> User </p><br>
+                                    <span>6 th October 2021</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
 
-                        <div class="user-profile">
-                            <!--User profile starts-->
-                            <img src="Images/profile-pic.png">
-                            <div>
-                                <p> User </p><br>
-                                <span>6 th October 2021</span>
+                        <p class="post-text">My post <span>Work-life</span>
+                            <a href="#"> Microsoft <i class="fas fa-caret-down"> </i></a>
+                        </p>
+                        <img src="Images/feed-image-1.png" class="post-img">
+
+
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="Images/like-blue.png">120</div>
+                                <div><img src="Images/comments.png">40</div>
+                                <div><img src="Images/share.png">10</div>
+                            </div>
+
+                            <div class="post-profile-icon">
+                                <img src="Images/profile-pic.png"><i class="fas fa-caret-down"></i>
                             </div>
                         </div>
-                        <!--User profile ends-->
-                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                    </div>
-                    <!--post row ends-->
-
-                    <p class="post-text">My post <span>Work-life</span>
-                        <a href="#"> Microsoft <i class="fas fa-caret-down"> </i></a>
-                    </p>
-                    <img src="Images/feed-image-1.png" class="post-img">
-
-
-                    <div class="post-row">
-                        <!--Post row starts-->
-                        <div class="activity-icons">
-                            <!--Activity icon Starts-->
-                            <div><img src="Images/like-blue.png">120</div>
-                            <div><img src="Images/comments.png">40</div>
-                            <div><img src="Images/share.png">10</div>
-                        </div>
-                        <!--Activity icons ends-->
-
-                        <div class="post-profile-icon">
-                            <!--post profile icon starts-->
-                            <img src="Images/profile-pic.png"><i class="fas fa-caret-down"></i>
-                        </div>
-                        <!--Post profile icon ends-->
-                    </div>
-                    <!--Post row ends-->
+                    </div> -->
                 </div>
+              
                 <!--post container ends-->
-
-                <div class="post-container">
-                    <!--Post container starts-->
-                    <div class="post-row">
-                        <!--post row starts-->
-
-                        <div class="user-profile">
-                            <!--User profile starts-->
-                            <img src="Images/profile-pic.png">
-                            <div>
-                                <p> User </p><br>
-                                <span>2 nd October 2021</span>
-                            </div>
-                        </div>
-                        <!--User profile ends-->
-                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                    </div>
-                    <!--post row ends-->
-
-                    <p class="post-text">Vacation memory</b></p>
-                    <img src="Images/feed-image-2.png" class="post-img">
-                    <div class="post-row">
-                        <!--Post row starts-->
-                        <div class="activity-icons">
-                            <!--Activity icon Starts-->
-                            <div><img src="Images/like.png">1k</div>
-                            <div><img src="Images/comments.png">350</div>
-                            <div><img src="Images/share.png">100</div>
-                        </div>
-                        <!--Activity icons ends-->
-                        <div class="post-profile-icon">
-                            <!--post profile icon starts-->
-                            <img src="Images/profile-pic.png"><i class="fas fa-caret-down"></i>
-                        </div>
-                        <!--Post profile icon ends-->
-                    </div>
-                    <!--Post row ends-->
-                </div> <!-- post container ends-->
-
-                <div class="post-container">
-                    <!--Post container starts-->
-                    <div class="post-row">
-                        <!--post row starts-->
-
-                        <div class="user-profile">
-                            <!--User profile starts-->
-                            <img src="Images/profile-pic.png">
-                            <div>
-                                <p> User </p><br>
-                                <span>3rd October 2021</span>
-                            </div>
-                        </div>
-                        <!--User profile ends-->
-                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                    </div>
-                    <!--post row ends-->
-
-                    <p class="post-text">Work from home</b></p>
-                    <img src="Images/feed-image-3.png" class="post-img">
-                    <div class="post-row">
-                        <!--Post row starts-->
-                        <div class="activity-icons">
-                            <!--Activity icon Starts-->
-                            <div><img src="Images/like.png">2k</div>
-                            <div><img src="Images/comments.png">255</div>
-                            <div><img src="Images/share.png">65</div>
-                        </div>
-                        <!--Activity icons ends-->
-                        <div class="post-profile-icon">
-                            <!--post profile icon starts-->
-                            <img src="Images/profile-pic.png"><i class="fas fa-caret-down"></i>
-                        </div>
-                        <!--Post profile icon ends-->
-                    </div>
-                    <!--Post row ends-->
-                </div> <!-- post container ends-->
-
-                <div class="post-container">
-                    <!--Post container starts-->
-                    <div class="post-row">
-                        <!--post row starts-->
-
-                        <div class="user-profile">
-                            <!--User profile starts-->
-                            <img src="Images/profile-pic.png">
-                            <div>
-                                <p> User </p><br>
-                                <span>4th October 2021</span>
-                            </div>
-                        </div>
-                        <!--User profile ends-->
-                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                    </div>
-                    <!--post row ends-->
-
-                    <p class="post-text">Vacation memory</b></p>
-                    <img src="Images/feed-image-4.png" class="post-img">
-                    <div class="post-row">
-                        <!--Post row starts-->
-                        <div class="activity-icons">
-                            <!--Activity icon Starts-->
-                            <div><img src="Images/like.png">122</div>
-                            <div><img src="Images/comments.png">4</div>
-                            <div><img src="Images/share.png">15</div>
-                        </div>
-                        <!--Activity icons ends-->
-                        <div class="post-profile-icon">
-                            <!--post profile icon starts-->
-                            <img src="Images/profile-pic.png"><i class="fas fa-caret-down"></i>
-                        </div>
-                        <!--Post profile icon ends-->
-                    </div>
-                    <!--Post row ends-->
-                </div> <!-- post container ends-->
-
-                <div class="post-container">
-                    <!--Post container starts-->
-                    <div class="post-row">
-                        <!--post row starts-->
-
-                        <div class="user-profile">
-                            <!--User profile starts-->
-                            <img src="Images/profile-pic.png">
-                            <div>
-                                <p> User </p><br>
-                                <span>29th September 2021</span>
-                            </div>
-                        </div>
-                        <!--User profile ends-->
-                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                    </div>
-                    <!--post row ends-->
-
-                    <p class="post-text">Vacation memory</b></p>
-                    <img src="Images/feed-image-5.png" class="post-img">
-                    <div class="post-row">
-                        <!--Post row starts-->
-                        <div class="activity-icons">
-                            <!--Activity icon Starts-->
-                            <div><img src="Images/like.png">4k</div>
-                            <div><img src="Images/comments.png">300</div>
-                            <div><img src="Images/share.png">432</div>
-                        </div>
-                        <!--Activity icons ends-->
-                        <div class="post-profile-icon">
-                            <!--post profile icon starts-->
-                            <img src="Images/profile-pic.png"><i class="fas fa-caret-down"></i>
-                        </div>
-                        <!--Post profile icon ends-->
-                    </div>
-                    <!--Post row ends-->
-                </div> <!-- post container ends-->
 
                 <button type="button" class="load-more-btn">Load More</button>
 
@@ -480,6 +350,7 @@
     <script src="Main_Page.js"></script>
     <!-- <script src="./contacts.js"></script>-->
     <script src = "friends.js"></script>
+    <script src = "getpost.js"></script>
 
 </body>
 

@@ -14,18 +14,23 @@
     // <a href = "chat.php?user_id='.$row['unique_id'].'">
      // <img src="../images/'.$row['image'] .'"
                                 //     class="avtar">
-
+        $user_id = $_SESSION['unique_id'];
                                 
        while( $row = mysqli_fetch_assoc($sql)){
+           if($row['unique_id'] != $user_id){
             $output .= '
-               <div class="online-list">
-                    
-                    <div class="online image-friend">
-                        <img src="../backend/images/'.$row['image'].'">
+                <a href = "../friends-profile/profile-page.php?user_id='.$row['unique_id'].'" style="text-decoration: none; color: black;">
+                <div class="online-list">
+                        
+                        <div class="online image-friend">
+                            <img src="../backend/images/'.$row['image'].'">
+                        </div>
+                        <p>'.$row['fname'].' ' .$row['lname'].'</p>
                     </div>
-                    <p>'.$row['fname'].' ' .$row['lname'].'</p>
-                </div>
+                </a>
             ';
+           }
+           
 
        }
     }
