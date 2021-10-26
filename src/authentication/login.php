@@ -1,3 +1,4 @@
+<?php include_once("../backend/db.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 

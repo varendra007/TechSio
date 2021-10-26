@@ -93,12 +93,12 @@
 
   <div class="right-sidebar" style="height: 100%; overflow-x: auto;">
 
-    <div class="search__container" style="width: 100%;">
+    <!-- <div class="search__container" style="width: 100%;">
       <input class="search__input" type="text" placeholder="Search" style="width: 90%;">
       <div class="lens" style="background-color: white;">
         <i class="fas fa-search"></i>
       </div>
-    </div>
+    </div> -->
     <div class="main-page__contacts"></div>
 
 

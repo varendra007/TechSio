@@ -1,4 +1,7 @@
+const search = document.querySelector('.search__input');
+const searchBtn = document.querySelector('.search__btn');
 const contacts = document.querySelector('.main-page__contacts');
+//
 
 console.log('contacts.js');
 

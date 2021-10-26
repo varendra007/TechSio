@@ -79,6 +79,29 @@
         .main-page__add-new-post-btn{
             width: 100%;
         }
+        #search__list{
+            width:45%;
+            background-color:#ffff; 
+            z-index:100;
+            position:fixed;
+            margin-top:0;
+            margin-left:2.3%;
+            border-radius:6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            /* max-height: 0; */
+            transition: max-height 0.3s;
+            overflow-y:auto;
+            overflow-x:auto;
+        }
+        .search_list{
+            max-height:0;
+            transition: max-height 0.3s;
+        }
+        .search__list-toggle{
+            max-height:400px;
+            /* padding: 5px 10px; */
+
+        }
 
     </style>
 </head>
@@ -103,17 +126,23 @@
             if(mysqli_num_rows($sql)>0){
                 $row = mysqli_fetch_assoc($sql);
             ?> 
-            <div class="nav-right">
-                <!--Nav right starts-->
-                <div class="search-box">
-                    <img src="Images/search.png" alt="Search Bar">
-                    <input type="text" placeholder="Search">
+            <div style = "width:65%;">
+                <div class="nav-right" style = "width:100%;">
+                    <!--Nav right starts-->
+                    <div class="search-box" style = "width:100%; margin-right:10%;">
+                        <img src="Images/search.png" alt="Search Bar">
+                        <input type="text" placeholder="Search" id = "user_search">
+                    </div>
+                    <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                        <!-- <img src="Images/profile-pic.png" height="70px"> -->
+                        <img src="../backend/images/<?php echo $row['image']; ?>"  height = "70px" class="avtar">
+                    </div>
                 </div>
-                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
-                    <!-- <img src="Images/profile-pic.png" height="70px"> -->
-                    <img src="../backend/images/<?php echo $row['image']; ?>"  height = "70px" class="avtar">
-                </div>
+            
+                <div id = "search__list" class = "search_list" style = ""></div>
+                
             </div>
+            
 
             <div class="settings-menu">
                 <!--Settings menu starts-->
@@ -316,12 +345,13 @@
             <div class="right-sidebar" style="height: 100%; overflow-x: auto;">
                 <!--Right side bar starts-->
                 <!-- <div style="height: 200px; width: 100%; color: red;"></div> -->
-                <div class="search__container" style="width: 100%;">
+                <!-- <div class="search__container" style="width: 100%;">
                     <input class="search__input" type="text" placeholder="Search" style="width: 90%;">
-                    <div class="lens" style="background-color: white;">
+                    <div class="lens search__btn" style="background-color: white;">
                         <i class="fas fa-search"></i>
                     </div>
-                </div>
+                </div> -->
+
                 <div class="main-page__contacts"></div>
                
                 
@@ -351,7 +381,8 @@
     <!-- <script src="./contacts.js"></script>-->
     <script src = "friends.js"></script>
     <script src = "getpost.js"></script>
-
+    <!-- <script src = "tst.js"></script> -->
+    <script src = "s.js" async defer></script>
 </body>
 
 </html>

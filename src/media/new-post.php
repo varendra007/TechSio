@@ -208,6 +208,7 @@
     </div>
     <script src="script.js" async defer></script>
     <script src = "../components/header/header.js" async defer></script>
+    <script src = "../components/header/s.js"></script>
     <script src = "friends.js" async defer></script>
 </body>
 

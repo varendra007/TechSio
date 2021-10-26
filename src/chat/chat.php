@@ -86,7 +86,7 @@ body{
 
         <div style ="display:flex; flex-direction:row;">
 
-            <div class = "left" style = >
+            <div class = "left" style = "width:25%;">
                 <?php include_once("../components/shortcuts/index.php"); ?>
             </div>
         
@@ -139,6 +139,7 @@ body{
     </div>
     <script src = "chat.js" async defer></script>
     <script src = "../components/header/header.js"></script>
+    <script src = "../components/header/s.js"></script>
 </body>
 </html>
 

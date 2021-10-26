@@ -28,17 +28,32 @@
         if(mysqli_num_rows($sql)>0){
             $row = mysqli_fetch_assoc($sql);
         ?> 
-        <div class="nav-right">
-            <!--Nav right starts-->
-            <div class="search-box">
-                <i class="fas fa-search fa-2x" style="padding: 0 5px 0 0;"></i>
-                <input type="text" placeholder="Search">
+            <!-- <div class="nav-right">
+                <div class="search-box">
+                    <i class="fas fa-search fa-2x" style="padding: 0 5px 0 0;"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="../backend/images/<?php echo $row['image']; ?>"  height = "70px" class="avtar">
+                </div>
+            </div> -->
+          <div style = "width:65%;">
+                <div class="nav-right" style = "width:100%;">
+                    <!--Nav right starts-->
+                    <div class="search-box" style = "width:100%; margin-right:10%;">
+                        <!-- <img src="Images/search.png" alt="Search Bar"> -->
+                        <i class="fas fa-search fa-2x" style="padding: 0 5px 0 0;"></i>
+                        <input type="text" placeholder="Search" id = "user_search">
+                    </div>
+                    <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                        <!-- <img src="Images/profile-pic.png" height="70px"> -->
+                        <img src="../backend/images/<?php echo $row['image']; ?>"  height = "70px" class="avtar">
+                    </div>
+                </div>
+            
+                <div id = "search__list" class = "search_list" style = ""></div>
+                
             </div>
-            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
-                <!-- <img src="Images/profile-pic.png" height="70px"> -->
-                <img src="../backend/images/<?php echo $row['image']; ?>"  height = "70px" class="avtar">
-            </div>
-        </div>
 
         <div class="settings-menu">
             <!--Settings menu starts-->
@@ -53,20 +68,20 @@
             <div class="settings-menu-inner">
                 <!--Settings menu Inner  starts-->
 
-                <!-- <a href="../profile/profile-page.php"> -->
+                <a href="../profile/profile-page.php" style = "text-decoration:none;color:#000;">
                     <div class="user-profile" style="display:flex; align-items:center; ">
                         <!--User profile starts-->
                         <img style="width: 45px; height: 45px; border-radius: 50%; margin-right: 10px;" src="../backend/images/<?php echo $row['image']; ?>" class="avtar">
                         <div>
                             <p> <?php echo $row['fname']." ". $row['lname']; ?></p>
-                            <p><span class="status__active">
+                            <p><span class="status__active" style = "color:rgb(30,216,46);">
                                 <?php echo $row['status']; ?>
                                 </span></p>
                             <!-- <br> -->
                             <!-- <a href="#">Profile</a> -->
                         </div>
                     </div>
-                <!-- </a> -->
+                </a>
                 <!--User profile ends-->
                 <hr>
                 <div class="user-profile">
