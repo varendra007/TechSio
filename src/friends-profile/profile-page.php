@@ -70,7 +70,7 @@
         <!--Profile container starts-->
 
 
-        <img src="Images/cover.png" alt="cover photo" class="cover-img">
+        <img src="../icons/cover.png" alt="cover photo" class="cover-img">
 
         <div class="profile-details">
             <!--profile-details starts-->
@@ -95,10 +95,10 @@
                             <!--User name should br taken from database-->
                             <p>120 friends - 20 mutual</p>
                             <!--No. of friends should be static and should change according to data in the database-->
-                            <img src="Images/member-1.png">
+                            <!-- <img src="Images/member-1.png">
                             <img src="Images/member-2.png">
                             <img src="Images/member-3.png">
-                            <img src="Images/member-4.png">
+                            <img src="Images/member-4.png"> -->
                         </div>
 
                     <?php } ?>
@@ -118,17 +118,17 @@
                 <form  method="post" class="profile-page__add-friend-form">
                       <input type="text" name = "user_id" value = "<?php echo $_SESSION['unique_id'];?>" hidden >
                     <input type="text" name = "friend_id" value = "<?php echo $user_id; ?>" hidden >
-                    <button type="submit" class="add-friend-btn" style = "background-color:#e4e6eb;"> <img src="Images/add-friends.png">Friend</button>
+                    <button type="submit" class="add-friend-btn" style = "background-color:#e4e6eb;"> <img src="../icons/add-friends.png">Friend</button>
                 </form>
 
                <?php } ?>
                 
 
-                <a href="../chat/chat.php?user_id=<?php echo $user_id; ?>" style = "background: #1876f2;border: 0; outline: 0; padding: 6px 10px; display: inline-flex; align-items: center; color: #fff; border-radius: 3px; margin-left: 10px; cursor: pointer; text-decoration:none; "><img src = "Images/message.png" style = "height: 15px; margin: 0 5px 0; padding: 0;"> Message</a>
+                <a href="../chat/chat.php?user_id=<?php echo $user_id; ?>" style = "background: #1876f2;border: 0; outline: 0; padding: 6px 10px; display: inline-flex; align-items: center; color: #fff; border-radius: 3px; margin-left: 10px; cursor: pointer; text-decoration:none; "><img src = "../icons/message.png" style = "height: 15px; margin: 0 5px 0; padding: 0;"> Message</a>
               
                 <!--button for adding friends-->
                 <br>
-                <a href="#"><img src="Images/more.png"></a>
+                <a href="#"><img src="../icons/more.png"></a>
 
             </div>
             <!--pd-right ends-->
@@ -145,12 +145,12 @@
                 <div class="profile-intro">
                     <!--profile intro starts-->
                     <h3> Intro </h3>
-                    <p class="intro-text">Believe, Become !!!<img src="Images/feeling.png"></p>
+                    <p class="intro-text">Believe, Become !!!<img src="../icons/feeling.png"></p>
                     <hr>
                     <ul>
-                        <li> <img src="Images/profile-study.png">Student at XYZ university.</li>
-                        <li> <img src="Images/profile-location.png">Lives in India.</li>
-                        <li> <img src="Images/profile-job.png">Started working at ABC Company.</li>
+                        <li> <img src="../icons/profile-study.png">Student at XYZ university.</li>
+                        <li> <img src="../icons/profile-location.png">Lives in India.</li>
+                        <li> <img src="../icons/profile-job.png">Started working at ABC Company.</li>
                     </ul>
                 </div>
                 <!--profile intro ends-->
@@ -257,9 +257,9 @@
 
                             <div class="post-row">
                                 <div class="activity-icons">
-                                    <div><img src="Images/like-blue.png"><? echo $row['likes'];?></div>
-                                    <div><img src="Images/comments.png">40</div>
-                                    <div><img src="Images/share.png">10</div>
+                                    <div><img src="../icons/like-blue.png"><? echo $row['likes'];?></div>
+                                    <div><img src="../icons/comments.png">40</div>
+                                    <div><img src="../icons/share.png">10</div>
                                 </div>
 
                                 <div class="post-profile-icon">

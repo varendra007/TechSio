@@ -37,9 +37,9 @@
 
                         <div class="post-row">
                             <div class="activity-icons">
-                                <div><img src="Images/like-blue.png">'.$row['likes'].'</div>
-                                <div><img src="Images/comments.png">40</div>
-                                <div><img src="Images/share.png">10</div>
+                                <div><img src="../icons/like-blue.png">'.$row['likes'].'</div>
+                                <div><img src="../icons/comments.png">40</div>
+                                <div><img src="../icons/share.png">10</div>
                             </div>
 
                             <div class="post-profile-icon">

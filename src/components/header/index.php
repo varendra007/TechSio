@@ -12,7 +12,7 @@
      <nav>
         <div class="nav-left">
             <!--nav left starts-->
-            <img src="../TechSio.png" height="150px" width="200px" class="logo" alt="Company Logo">
+            <img src="../icons/TechSio.png" height="150px" width="200px" class="logo" alt="Company Logo">
             <ul>
             <li style="color: #fff; margin: 0 15px;"><i class="fas fa-bell fa-2x" style="color: #ffff;"></i></li>
             <li style="margin: 0 15px;"><i class="fas fa-envelope fa-2x" style="color: #fff;"></i></li>
@@ -34,7 +34,7 @@
                     <input type="text" placeholder="Search">
                 </div>
                 <div class="nav-user-icon online" onclick="settingsMenuToggle()">
-                    <img src="../backend/images/<?php echo $row['image']; ?>"  height = "70px" class="avtar">
+                    <img src="../backend/images/<?php /* echo $row['image']; */ ?>"  height = "70px" class="avtar">
                 </div>
             </div> -->
           <div style = "width:65%;">
@@ -86,7 +86,7 @@
                 <hr>
                 <div class="user-profile">
                     <!--User profile starts-->
-                    <img src="Images/feedback.png">
+                    <img src="../icons/feedback.png">
                     
                     <div>
                         <p> FeedBack </p><br>
@@ -99,28 +99,28 @@
                 <div class="settings-links">
                     <!--Setting links starts-->
                     <img src="Images/setting.png" class="settings-icon">
-                    <a href="#">Settings & Privacy <img src="Images/arrow.png" width="10px"></a>
+                    <a href="#">Settings & Privacy <img src="../icons/arrow.png" width="10px"></a>
                 </div>
                 <!--Setting links ends-->
 
                 <div class="settings-links">
                     <!--help starts-->
-                    <img src="Images/help.png" class="settings-icon">
-                    <a href="#">Help <img src="Images/arrow.png" width="10px"></a>
+                    <img src="../icons/help.png" class="settings-icon">
+                    <a href="#">Help <img src="../icons/arrow.png" width="10px"></a>
                 </div>
                 <!--help ends-->
 
                 <div class="settings-links">
                     <!--Display starts-->
-                    <img src="Images/display.png" class="settings-icon">
-                    <a href="#">Display & Accessibilty <img src="Images/arrow.png" width="10px"></a>
+                    <img src="../icons/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibilty <img src="../icons/arrow.png" width="10px"></a>
                 </div>
                 <!--Display ends-->
 
                 <div class="settings-links">
                     <!--Logout starts-->
-                    <img src="Images/logout.png" class="settings-icon">
-                    <a href="#">Logout<img src="Images/arrow.png" width="10px"></a>
+                    <img src="../icons/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="../icons/arrow.png" width="10px"></a>
                 </div>
                 <!--Logout ends-->
 

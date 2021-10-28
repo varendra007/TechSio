@@ -113,11 +113,11 @@
         <nav style="position: fixed;width: 100%; height: 25%;">
             <div class="nav-left">
                 <!--nav left starts-->
-                <img src="Images/TechSio.png" height="150px" width="200px" class="logo" alt="Company Logo">
+                <img src="../icons/TechSio.png" height="150px" width="200px" class="logo" alt="Company Logo">
                 <ul>
-                    <li><img src="Images/notification.png" alt="Notifications"></li>
-                    <li><img src="Images/inbox.png" alt="Inbox"></li>
-                    <li><img src="Images/message.png" alt="Message"></li>
+                    <li><img src="../icons/notification.png" alt="Notifications"></li>
+                    <li><img src="../icons/inbox.png" alt="Inbox"></li>
+                    <li><img src="../icons/message.png" alt="Message"></li>
                 </ul>
             </div>
             <?php 
@@ -130,7 +130,7 @@
                 <div class="nav-right" style = "width:100%;">
                     <!--Nav right starts-->
                     <div class="search-box" style = "width:100%; margin-right:10%;">
-                        <img src="Images/search.png" alt="Search Bar">
+                        <img src="../icons/search.png" alt="Search Bar">
                         <input type="text" placeholder="Search" id = "user_search">
                     </div>
                     <div class="nav-user-icon online" onclick="settingsMenuToggle()">
@@ -175,7 +175,7 @@
                     <hr>
                     <div class="user-profile">
                         <!--User profile starts-->
-                        <img src="Images/feedback.png">
+                        <img src="../icons/feedback.png">
                        
                         <div>
                             <p> FeedBack </p><br>
@@ -187,29 +187,29 @@
 
                     <div class="settings-links">
                         <!--Setting links starts-->
-                        <img src="Images/setting.png" class="settings-icon">
-                        <a href="#">Settings & Privacy <img src="Images/arrow.png" width="10px"></a>
+                        <img src="../icons/setting.png" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="../icons/arrow.png" width="10px"></a>
                     </div>
                     <!--Setting links ends-->
 
                     <div class="settings-links">
                         <!--help starts-->
-                        <img src="Images/help.png" class="settings-icon">
-                        <a href="#">Help <img src="Images/arrow.png" width="10px"></a>
+                        <img src="../icons/help.png" class="settings-icon">
+                        <a href="#">Help <img src="../icons/arrow.png" width="10px"></a>
                     </div>
                     <!--help ends-->
 
                     <div class="settings-links">
                         <!--Display starts-->
-                        <img src="Images/display.png" class="settings-icon">
-                        <a href="#">Display & Accessibilty <img src="Images/arrow.png" width="10px"></a>
+                        <img src="../icons/display.png" class="settings-icon">
+                        <a href="#">Display & Accessibilty <img src="../icons/arrow.png" width="10px"></a>
                     </div>
                     <!--Display ends-->
 
                     <div class="settings-links">
                         <!--Logout starts-->
-                        <img src="Images/logout.png" class="settings-icon">
-                        <a href="#">Logout<img src="Images/arrow.png" width="10px"></a>
+                        <img src="../icons/logout.png" class="settings-icon">
+                        <a href="#">Logout<img src="../icons/arrow.png" width="10px"></a>
                     </div>
                     <!--Logout ends-->
 
@@ -232,20 +232,20 @@
 
                 <!--Left-sidebar Starts HIGHLIGHT-->
                 <div class="imp-links">
-                    <a href="https://indianexpress.com/section/trending/"><img src="Images/news.png" alt="Trending News">Latest News</a>
-                    <a href="../friends-overview/index.php"><img src="Images/friends.png" alt="Friends">Friends</a>
-                    <a href="#"><img src="Images/group.png" alt="Group">Group</a>
-                    <a href="#"><img src="Images/marketplace.png" alt="Market Place">Market Place</a>
-                    <a href="#"><img src="Images/watch.png" alt="Watch">Watch</a>
+                    <a href="https://indianexpress.com/section/trending/"><img src="../icons/news.png" alt="Trending News">Latest News</a>
+                    <a href="../friends-overview/index.php"><img src="../icons/friends.png" alt="Friends">Friends</a>
+                    <a href="#"><img src="../icons/group.png" alt="Group">Group</a>
+                    <a href="#"><img src="../icons/marketplace.png" alt="Market Place">Market Place</a>
+                    <a href="#"><img src="../icons/watch.png" alt="Watch">Watch</a>
                     <a href="#">More</a>
                 </div>
 
                 <div class="shortcut-links">
                     <p>Shortcuts</p>
                     <!-- <a href="#"><img src="Images/shortcut-1.png">Stories</a> -->
-                    <a href="#"><img src="Images/shortcut-2.png">Posts</a>
-                    <a href="../chat/contacts.php"><img src="Images/shortcut-3.png">Contact Details</a>
-                    <a href="#"><img src="Images/shortcut-4.png">History management</a>
+                    <a href="#"><img src="../icons/shortcut-2.png">Posts</a>
+                    <a href="../chat/contacts.php"><img src="../icons/shortcut-3.png">Contact Details</a>
+                    <a href="#"><img src="../icons/shortcut-4.png">History management</a>
                 </div>
 
 

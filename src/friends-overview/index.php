@@ -138,10 +138,10 @@
                             <!--User name should br taken from database-->
                             <p>120 friends - 20 mutual</p>
                             <!--No. of friends should be static and should change according to data in the database-->
-                            <img src="Images/member-1.png">
+                            <!-- <img src="/member-1.png">
                             <img src="Images/member-2.png">
                             <img src="Images/member-3.png">
-                            <img src="Images/member-4.png">
+                            <img src="Images/member-4.png"> -->
                         </div>
 
 
@@ -158,11 +158,11 @@
 
                 <a href="../chat/chat.php?user_id=<?php echo $row['friend_id']; ?>"
                     style="background: #1876f2;border: 0; outline: 0; padding: 6px 10px; display: inline-flex; align-items: center; color: #fff; border-radius: 3px; margin-left: 10px; cursor: pointer; text-decoration:none; "><img
-                        src="Images/message.png" style="height: 15px; margin: 0 5px 0; padding: 0;"> Message</a>
+                        src="../icons/message.png" style="height: 15px; margin: 0 5px 0; padding: 0;"> Message</a>
 
                 <!--button for adding friends-->
                 <br>
-                <a href="#"><img src="Images/more.png"></a>
+                <a href="#"><img src="../icons/more.png"></a>
 
             </div>
             <!--pd-right ends-->

@@ -60,7 +60,7 @@
         <!--Profile container starts-->
 
 
-        <img src="Images/cover.png" alt="cover photo" class="cover-img">
+        <img src="../icons/cover.png" alt="cover photo" class="cover-img">
 
  
 
@@ -76,9 +76,9 @@
                     <p class="intro-text">Believe, Become !!!<img src="Images/feeling.png"></p>
                     <hr>
                     <ul>
-                        <li> <img src="Images/profile-study.png">Student at XYZ university.</li>
-                        <li> <img src="Images/profile-location.png">Lives in India.</li>
-                        <li> <img src="Images/profile-job.png">Started working at ABC Company.</li>
+                        <li> <img src="../icons/profile-study.png">Student at XYZ university.</li>
+                        <li> <img src="../icons/profile-location.png">Lives in India.</li>
+                        <li> <img src="../icons/profile-job.png">Started working at ABC Company.</li>
                     </ul>
                 </div>
                 <!--profile intro ends-->

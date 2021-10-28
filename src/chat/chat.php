@@ -109,7 +109,7 @@ body{
                                 <h3><?php echo $row['fname']." ". $row['lname']; ?></h3>
                                 <p style="margin-left: 10px;"><span style="color: greenyellow;"><?php echo $row['status']; ?></span></p>
                             </div>
-
+                                    <!-- <img src="../icons/TechSio.png" alt=""> -->
 
                         <?php        
                             }
