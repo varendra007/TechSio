@@ -45,8 +45,19 @@
         }
         .main-page__add-new-post-btn{
             width: 100%;
+            height:100%;
         }
-    
+        .cover-img__container{
+            width:100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 6px;
+            margin-bottom: 14px;
+        }
+        .cover-img{
+            /* height:100%; */
+            /* width:auto; */
+        }
 
     </style>
 </head>
@@ -60,7 +71,21 @@
         <!--Profile container starts-->
 
 
-        <img src="../icons/cover.png" alt="cover photo" class="cover-img">
+        <!-- <img src="" alt="cover photo" class="cover-img"> -->
+        <!-- <img src = "" -->
+        <?php 
+            $sql0 = mysqli_query($conn, "SELECT cover_image FROM user_info WHERE user_id = '{$user_id}'");
+            if(mysqli_num_rows($sql) > 0){
+                while($row = mysqli_fetch_assoc($sql0)){?>
+                <div class="cover-img__container">
+
+                    <img src="../backend/images/cover/<?php echo $row['cover_image']; ?>" alt="cover photo" class="cover-img">
+                </div>
+                    <!-- <img src="../backend/images/cover/163558253158343108lambo0.jpg" alt=""> -->
+                    <?php
+                }
+            }
+        ?>
 
  
 
@@ -73,13 +98,34 @@
                 <div class="profile-intro">
                     <!--profile intro starts-->
                     <h3> Intro </h3>
-                    <p class="intro-text">Believe, Become !!!<img src="Images/feeling.png"></p>
-                    <hr>
-                    <ul>
-                        <li> <img src="../icons/profile-study.png">Student at XYZ university.</li>
-                        <li> <img src="../icons/profile-location.png">Lives in India.</li>
-                        <li> <img src="../icons/profile-job.png">Started working at ABC Company.</li>
-                    </ul>
+                    <?php 
+                        $sqli = mysqli_query($conn, "SELECT * FROM user_info WHERE user_id = '{$user_id}'");
+                        if(mysqli_num_rows($sqli) > 0){
+                            while($row = mysqli_fetch_assoc($sqli)){?>
+                                <?php if($row['status']){?>
+                                    <p class="intro-text"><?php echo $row['status']; ?></p>
+                                <?php } ?>
+                                
+                                <hr>
+                                <ul>
+                                    <?php if($row['education']){?>
+                                        <li> <img src="../icons/profile-study.png"><?php echo $row['education']; ?> </li>
+                                    <?php } ?>
+
+                                    <?php if($row['address']){?>
+                                       <li> <img src="../icons/profile-location.png">Lives in <?php echo $row['address']; ?>.</li>
+                                    <?php } ?>
+
+                                    <?php if($row['hobbies']) {?>
+                                       <li>I am Interested in <?php echo $row['hobbies'];  ?>. </li>
+                                    <?php } ?>
+                                   
+                                    <!-- <li> <img src="../icons/profile-job.png">Started working at ABC Company.</li> -->
+                                </ul>
+
+                        <?php  }
+                        }
+                    ?>
                 </div>
                 <!--profile intro ends-->
 

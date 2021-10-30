@@ -73,6 +73,11 @@
                                     $_SESSION['unique_id'] = $row['unique_id']; // using this session we used user unique_id in other php
 
                                     echo "success";
+
+                                    $sql4 = "INSERT INTO user_info (user_id) VALUES ('{$random_id}')";
+                                    if(!$conn->query($sql4)){
+                                        echo "Account created successfully. Please login to your account!";
+                                    }
                                 }else{
                                     echo "Connection error";
                                 }
@@ -80,6 +85,7 @@
                             }else{
                                 echo "Something went wrong!!!";
                             }
+                           
                         }else{
                             echo "Image not uploaded! Something went wrong!";
                         }

@@ -14,7 +14,16 @@
             // user credentials are correct
             $row = mysqli_fetch_assoc($sql);
             $_SESSION['unique_id'] = $row['unique_id']; // using this session we used user unique_id in other php
+            $unique_id = $row['unique_id'];
             echo "success";
+            $sql2 = mysqli_query($conn, "SELECT user_id from user_info");
+            if(mysqli_num_rows($sql2) == 0){
+                $sql4 = "INSERT INTO user_info (user_id) VALUES ('{$unique_id}')";
+                if(!$conn->query($sql4)){
+                echo "Unable to login! Please try again later";
+                }
+            }
+            
         }else{
             echo "Please enter valid credentials";
         }

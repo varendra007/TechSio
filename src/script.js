@@ -1,4 +1,4 @@
-console.log('Hello world');
+// console.log('Hello world');
 
 const form = document.querySelector('.signup-form');
 const submitBtn = document.querySelector('.signup__btn__submit');
