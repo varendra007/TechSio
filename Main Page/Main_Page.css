@@ -36,7 +36,7 @@
 
 :root{
     --body-color: #efefef;
-    --nav-color: #1876f2;
+    --grad: linear-gradient(to bottom right, #f27ef2, #7d2fcc);
     --bg-color: #fff;
 }
 
@@ -54,7 +54,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--nav-color);
+    background: var(--grad);
     padding: 5px 5%;
     position: sticky;
     top: 0;
@@ -180,7 +180,7 @@ nav{
     font-size: 15px;
 }
 .sidebar-title a{
-    color:#1876f2;
+    color:#BA55D3;
     font-size: 13px;
 }
 .event{
@@ -201,19 +201,19 @@ nav{
 }
 .event p{
     font-size: 13px;
-    color: #1876f2;
+    color:#BA55D3;
 }
 .event a{
     font-size: 12px;
     text-decoration: none;
-    color: #1876f2;
+    color:#BA55D3;
 }
 .left-event span{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #1876f2;
+    background: #BA55D3;
     color: #fff;
     font-size: 10px;
     padding: 4px 0;
@@ -436,7 +436,7 @@ nav{
 
 .user-profile a{
     font-size: 12px;
-    color: #1876f2;
+    color:#BA55D3;
 }
 .settings-menu-inner{
     padding: 20px;
