@@ -42,7 +42,7 @@
 
 .dark-theme{
     --body-color: #0a0a0a;
-    --nav-color: #000;
+    --grad: #000;
     --bg-color: #000;
 }
 
@@ -145,15 +145,16 @@ nav{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    color:#626262;
+    color:#BA55D3;
     width: fit-content;
 }
 .imp-links a img{
     width:30px;
     margin-right: 20px;
+    color:#BA55D3;
 }
 .imp-links a:last-child{
-    color:indigo;
+    color:#BA55D3;
 }
 .imp-links{
     border-bottom:3px #626262;
