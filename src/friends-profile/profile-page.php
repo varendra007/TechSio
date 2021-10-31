@@ -221,7 +221,7 @@
                     </div>
                     <div class="photo-box">
                         <?php
-                            $sql = mysqli_query($conn, "SELECT p.user_id, p.image AS post_image, p.likes, p.comment, p.date, u.image AS user_image, u.fname, u.lname FROM posts AS p JOIN users AS u WHERE u.unique_id = p.user_id and p.user_id = {$user_id}");
+                            $sql = mysqli_query($conn, "SELECT p.user_id, p.image AS post_image, p.likes, p.comment, p.date, u.image AS user_image, u.fname, u.lname FROM posts AS p JOIN users AS u WHERE u.unique_id = p.user_id AND p.user_id = {$user_id}");
 
                             if(mysqli_num_rows($sql) == 0){
                             ?> <p style="text-align:center; width:200px;">No posts are available</p><?php
@@ -284,7 +284,8 @@
                 <!--write post container ends-->
                 <div class="profile-page__post-container">
                     <?php
-                        $sql = mysqli_query($conn, "SELECT p.user_id, p.image AS post_image, p.likes, p.comment, p.date, u.image AS user_image, u.fname, u.lname FROM posts AS p JOIN users AS u WHERE u.unique_id = p.user_id and p.user_id = {$user_id}");
+                         $sql = mysqli_query($conn, "SELECT p.user_id, p.image AS post_image, p.likes, p.comment, p.date,p.post_id, u.image AS user_image, u.fname, u.lname FROM posts AS p JOIN users AS u WHERE u.unique_id = p.user_id AND  p.user_id = {$user_id};");
+    
                         // $output = "";
 
                         if(mysqli_num_rows($sql) == 0){
@@ -300,28 +301,55 @@
                             <div class="post-row">
 
                                 <div class="user-profile">
-                                    <img src="../backend/images/<?php echo $row['user_image'];?>">
+                                    <img src="../backend/images/<?php echo $row['user_image']; ?>">
                                     <div>
-                                        <p><?php echo $row['fname'].' ' .$row['lname'];?></p><br>
-                                        <span><?php echo $row['date'];?></span>
+                                        <p><?php echo $row['fname'].' ' .$row['lname']; ?></p><br>
+                                        <span><?php $row['date'] ?></span>
                                     </div>
                                 </div>
                                 <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                             </div>
 
-                            <p class="post-text"><?php echo $row['comment'];?></p>
+                            <p class="post-text"><?php echo $row['comment']; ?></p>
                             <img  src="../backend/images/post/<?php echo $row['post_image'];?>"  class="post-img">
 
 
                             <div class="post-row">
                                 <div class="activity-icons">
-                                    <div><img src="../icons/like-blue.png"><? echo $row['likes'];?></div>
-                                    <div><img src="../icons/comments.png">40</div>
-                                    <div><img src="../icons/share.png">10</div>
+                                    <div style = "justify-content:center" >
+                                        <div class = "likes-btn-handler<?php echo $row['post_id']; ?>">
+                                            <?php
+                                            // ! finding id of post since image name is unique
+                                            //  $like = explode('.',$row['post_image'])[0];
+                                            //  $ext =  explode('.',$row['post_image'])[1];
+                                            $post_id  = $row['post_id'];
+                                            
+                                            $sql_likes = mysqli_query($conn, "SELECT * FROM post_manager WHERE post_id = {$post_id} AND user_id = {$_SESSION['unique_id']}");
+                                            if(mysqli_num_rows($sql_likes) > 0){ ?>
+                                                <i onclick = "unlike_update('<?php echo $row['post_id'];?>')" class="fas fa-heart" style = "color: red;"></i>
+                                                <!-- <i onclick = "like_update('<?php echo $row['post_id'];?>')" class="far fa-heart" style = "color:#000; margin-right:10px;"></i> -->
+                                            <?php  }else{ ?>
+                                            <!-- <img onclick = "like_update('<?php echo $row['post_id'];?>')" src="Images/like-blue.png" class= "like_btn"> -->
+                                            <i onclick = "like_update('<?php echo $row['post_id'];?>')" class="far fa-heart" style = "color:#000; "></i>
+
+                                            <?php    }
+                                            ?>
+                                        </div>
+                                        
+
+                                        <span id  = "like_id<?php echo $row['post_id']; ?>"  >
+
+                                            <?php echo $row['likes']; ?>
+                                        </span> 
+                                    
+                                    </div>
+                                
+                                    <div><img src="Images/comments.png">40</div>
+                                    <div><img src="Images/share.png">10</div>
                                 </div>
 
                                 <div class="post-profile-icon">
-                                    <img src="../backend/images/<?php echo $row['user_image'];?>"><i class="fas fa-caret-down"></i>
+                                    <img src="../backend/images/<?php echo $row['user_image']; ?>"><i class="fas fa-caret-down"></i>
                                 </div>
                             </div>
                         </div>
@@ -351,7 +379,62 @@
         <p> Copyright 2021 - TechSio Social Media Site </p>
     </div>
     <!--footer ends-->
+  <script>
+        function like_update(id){
+            // const elId = id.split()[0];
+            const likeEl = document.querySelector(`#like_id${id}`);
+            const likesBtn = document.querySelector(`.likes-btn-handler${id}`);
 
+            let cur_count = +(likeEl.textContent);
+            cur_count++;
+            likeEl.textContent = cur_count;
+            // console.log(cur_count);
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', '../backend/likes-counter/likes.php', true);
+            xhr.onload = () => {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        let data = xhr.response;
+                        console.log(data);
+                        // searchList.innerHTML = data;
+                    }
+                }
+            };
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhr.send('id=' + (+id));
+                // console.log('hi');
+            // console.log(id + '.' + ext);
+           likesBtn.innerHTML  = `<i onclick = "unlike_update('${id}')" class="fas fa-heart" style = "color: red; "></i>`;
+
+            
+        }
+         function unlike_update (id){
+            const likeEl = document.querySelector(`#like_id${id}`);
+            const likesBtn = document.querySelector(`.likes-btn-handler${id}`);
+
+            let cur_count = +(likeEl.textContent);
+            cur_count--;
+            likeEl.textContent = cur_count;
+            // console.log(cur_count);
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', '../backend/likes-counter/unlike.php', true);
+            xhr.onload = () => {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        let data = xhr.response;
+                        console.log(data);
+                        // searchList.innerHTML = data;
+                    }
+                }
+            };
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhr.send('id=' + (+id));
+                // console.log('hi');
+            // console.log(id + '.' + ext);
+            likesBtn.innerHTML = `<i onclick = "like_update('${id}')" class="far fa-heart" style = "color:#000; "></i>`;
+        }
+     
+    </script>
     <script src="profile-page.js"></script>
     <script src = "add-friend.js"></script>
     <script src = "../components/header/header.js"></script>
