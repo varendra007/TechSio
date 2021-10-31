@@ -13,9 +13,7 @@
         if(mysqli_num_rows($sql) > 0){
             // user credentials are correct
             $row = mysqli_fetch_assoc($sql);
-            $_SESSION['unique_id'] = $row['unique_id']; // using this session we used user unique_id in other php
             $unique_id = $row['unique_id'];
-            echo "success";
             $sql2 = mysqli_query($conn, "SELECT user_id from user_info");
             if(mysqli_num_rows($sql2) == 0){
                 $sql4 = "INSERT INTO user_info (user_id) VALUES ('{$unique_id}')";
@@ -23,6 +21,17 @@
                 echo "Unable to login! Please try again later";
                 }
             }
+            $status = "Active now";
+            $sql_s = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE unique_id = {$unique_id}");
+
+            if($sql_s){
+                
+                $_SESSION['unique_id'] = $row['unique_id']; // using this session we used user unique_id in other php
+                echo "success";
+            }else{
+                echo "Error 500. Something went wrong!";
+            }
+
             
         }else{
             echo "Please enter valid credentials";

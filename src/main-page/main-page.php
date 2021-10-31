@@ -211,7 +211,7 @@
                     <div class="settings-links">
                         <!--Logout starts-->
                         <img src="../icons/logout.png" class="settings-icon">
-                        <a href="#">Logout<img src="../icons/arrow.png" width="10px"></a>
+                        <a href="../backend/authentication/logout.php">Logout<img src="../icons/arrow.png" width="10px"></a>
                     </div>
                     <!--Logout ends-->
 
