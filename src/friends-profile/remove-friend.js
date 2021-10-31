@@ -1,6 +1,6 @@
-const form = document.querySelector('.profile-page__remove-friend-form');
+const formRem = document.querySelector('.profile-page__remove-friend-form');
 const removeBtn = document.querySelector('.remove-friend-btn');
-const actionContainer = document.querySelector('.frnd-actions');
+const remActionContainer = document.querySelector('.frnd-actions');
 console.log('remove friend');
 
 removeBtn.addEventListener('click', function (e) {
@@ -20,11 +20,13 @@ removeBtn.addEventListener('click', function (e) {
 					// console.log(data);
 					// msgInput.value = '';
 					// console.log(data);
-					actionContainer.innerHTML = ` <form  method="post" class="profile-page__add-friend-form">
-                      <input type="text" name = "user_id" value = "<?php echo $_SESSION['unique_id'];?>" hidden >
-                    <input type="text" name = "friend_id" value = "<?php echo $user_id; ?>" hidden >
-                    <button type="submit" class="add-friend-btn" style = "background-color:#e4e6eb;"> <img src="../icons/add-friends.png">Friend</button>
-                </form>`;
+					remActionContainer.innerHTML = ` <form  method="post" class="profile-page__add-friend-form">
+					            <input type="text" name = "user_id" value = "<?php echo $_SESSION['unique_id'];?>" hidden >
+					          <input type="text" name = "friend_id" value = "<?php echo $user_id; ?>" hidden >
+					          <button type="submit" class="add-friend-btn" style = "background-color:#e4e6eb;"> <img src="../icons/add-friends.png">Friend</button>
+					      </form>`;
+					location.reload();
+					console.log('action on rmoaslkdfjve');
 				} else {
 				}
 				// console.log(data);
@@ -32,6 +34,6 @@ removeBtn.addEventListener('click', function (e) {
 			}
 		}
 	};
-	let formData = new FormData(form);
+	let formData = new FormData(formRem);
 	xhr.send(formData);
 });

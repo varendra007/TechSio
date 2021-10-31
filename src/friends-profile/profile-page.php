@@ -7,14 +7,14 @@
     $user_id = mysqli_real_escape_string($conn, $_GET['user_id']);
     $sql = mysqli_query($conn, "SELECT * FROM friends WHERE user_id = {$_SESSION['unique_id']}");
     $isFriend  = 0;
-        if(mysqli_num_rows($sql) > 0){
-            while($row = mysqli_fetch_assoc($sql)){
-                if($row['friend_id'] == $user_id){
-                    $isFriend = 1;
-                }
+    if(mysqli_num_rows($sql) > 0){
+        while($row = mysqli_fetch_assoc($sql)){
+            if($row['friend_id'] == $user_id){
+                $isFriend = 1;
             }
-
         }
+
+    }
        
 ?>
 
@@ -142,22 +142,23 @@
                 <!--pd-right starts-->
                 <div class="frnd-actions">
 
-                <?php if($isFriend == 0){?>
+                    <?php //!1111111111111111111111111111111
+                     if($isFriend == 0){?>
 
-                <form  method="post" class="profile-page__add-friend-form">
-                      <input type="text" name = "user_id" value = "<?php echo $_SESSION['unique_id'];?>" hidden >
-                    <input type="text" name = "friend_id" value = "<?php echo $user_id; ?>" hidden >
-                    <button type="submit" class="add-friend-btn" style = "background-color:#e4e6eb;"> <img src="../icons/add-friends.png">Friend</button>
-                </form>
+                        <form  method="post" class="profile-page__add-friend-form" enctype="multipart/form-data">
+                            <input type="text" name = "user_id" value = "<?php echo $_SESSION['unique_id'];?>" hidden >
+                            <input type="text" name = "friend_id" value = "<?php echo $user_id; ?>" hidden >
+                            <button type="submit" class="add-friend-btn" style = "background-color:#e4e6eb;"> <img src="../icons/add-friends.png">Friend</button>
+                        </form>
 
-               <?php }else{ ?>
-                   <form  method="post" class="profile-page__remove-friend-form">
-                        <input type="text" name = "user_id" value = "<?php echo $_SESSION['unique_id'];?>" hidden >
-                        <input type="text" name = "friend_id" value = "<?php echo $user_id; ?>" hidden >
-                        <button style = "" type="submit" class="remove-friend-btn" style = "background-color:#e4e6eb;"> <i style="color:black;padding-right:5px;" class="fas fa-user-minus"></i> Remove Frined</button>
-                    </form>
-                <?php
-               } ?>
+                    <?php }else{ ?>
+                        <form  method="post" class="profile-page__remove-friend-form" enctype="multipart/form-data">
+                            <input type="text" name = "user_id" value = "<?php echo $_SESSION['unique_id'];?>" hidden >
+                            <input type="text" name = "friend_id" value = "<?php echo $user_id; ?>" hidden >
+                            <button style = "" type="submit" class="remove-friend-btn" style = "background-color:#e4e6eb;"> <i style="color:black;padding-right:5px;" class="fas fa-user-minus"></i> Remove Frined</button>
+                        </form>
+                        <?php
+                    } ?>
                 </div>
                 
 
@@ -439,7 +440,8 @@
     <script src = "add-friend.js"></script>
     <script src = "../components/header/header.js"></script>
     <script src = "../components/header/s.js"></script>
-    <script src="remove-frined.js"></script>
+    <script src= "remove-friend.js"></script>
+    <!-- <script src="p.js"></script> -->
     <!-- <script src = "getUserPosts.js"></script> -->
 
 </body>
