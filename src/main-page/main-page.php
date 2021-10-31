@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="Main_Page.css">
     <link rel="stylesheet" href="../global-styles.css">
     <script src="https://kit.fontawesome.com/cc5f467dfb.js" crossorigin="anonymous"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <!-- <link rel="stylesheet" href="../src/global-styles.css"> -->
     <style>
        .online-list .online img {
@@ -227,7 +229,7 @@
         <div class="container" style="height: 75%; overflow: hidden; bottom: 0; position: fixed;">
             <!--Container Starts -->
 
-            <div class="left-sidebar" style="overflow-x: auto; height: 100%;">
+            <div class="left-sidebar" style="overflow-y: auto; height: 100%; overflow-x: hidden;">
                 <!-- <div style="height: 200px; width: 100%; color: red;"></div> -->
 
                 <!--Left-sidebar Starts HIGHLIGHT-->
@@ -253,7 +255,7 @@
             <!--Left-sidebar Ends-->
 
 
-            <div class="main-content" style="overflow-x:auto; height: 100%;">
+            <div class="main-content" style="overflow-y:auto; height: 100%;">
                 <!--Main content starts-->
                 <!-- <div style="height: 200px; width: 100%; color: red;"></div> -->
 

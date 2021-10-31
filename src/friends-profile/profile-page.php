@@ -58,7 +58,7 @@
         }
         .cover-img_container{
             /* width:100px; */
-            background-color:red;
+            /* background-color:red; */
             height: 300px;
             overflow: hidden;
             border-radius: 6px;
@@ -85,14 +85,14 @@
         $sql0 = mysqli_query($conn, "SELECT cover_image FROM user_info WHERE user_id = '{$user_id}'");
         if(mysqli_num_rows($sql) > 0){
             while($row = mysqli_fetch_assoc($sql0)){?>
-            <div class="cover-img__container">
                 <?php if($row['cover_image']){ ?>
-                    <img src="../backend/images/cover/<?php echo $row['cover_image']; ?>" alt="cover photo" class="cover-img">
+                    <div class="cover-img__container">
+                        <img src="../backend/images/cover/<?php echo $row['cover_image']; ?>" alt="cover photo" class="cover-img">
+                    </div>
 
                     <?php
                 } 
                ?>
-            </div>
                 <!-- <img src="../backend/images/cover/163558253158343108lambo0.jpg" alt=""> -->
                 <?php
             }
@@ -140,6 +140,8 @@
             <div class="pd-right profile-page__frnd-actions">
 
                 <!--pd-right starts-->
+                <div class="frnd-actions">
+
                 <?php if($isFriend == 0){?>
 
                 <form  method="post" class="profile-page__add-friend-form">
@@ -148,7 +150,15 @@
                     <button type="submit" class="add-friend-btn" style = "background-color:#e4e6eb;"> <img src="../icons/add-friends.png">Friend</button>
                 </form>
 
-               <?php } ?>
+               <?php }else{ ?>
+                   <form  method="post" class="profile-page__remove-friend-form">
+                        <input type="text" name = "user_id" value = "<?php echo $_SESSION['unique_id'];?>" hidden >
+                        <input type="text" name = "friend_id" value = "<?php echo $user_id; ?>" hidden >
+                        <button style = "" type="submit" class="remove-friend-btn" style = "background-color:#e4e6eb;"> <i style="color:black;padding-right:5px;" class="fas fa-user-minus"></i> Remove Frined</button>
+                    </form>
+                <?php
+               } ?>
+                </div>
                 
 
                 <a href="../chat/chat.php?user_id=<?php echo $user_id; ?>" style = "background: #1876f2;border: 0; outline: 0; padding: 6px 10px; display: inline-flex; align-items: center; color: #fff; border-radius: 3px; margin-left: 10px; cursor: pointer; text-decoration:none; "><img src = "../icons/message.png" style = "height: 15px; margin: 0 5px 0; padding: 0;"> Message</a>
@@ -346,6 +356,7 @@
     <script src = "add-friend.js"></script>
     <script src = "../components/header/header.js"></script>
     <script src = "../components/header/s.js"></script>
+    <script src="remove-frined.js"></script>
     <!-- <script src = "getUserPosts.js"></script> -->
 
 </body>

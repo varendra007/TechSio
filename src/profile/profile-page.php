@@ -48,11 +48,12 @@
             height:100%;
         }
         .cover-img__container{
-            width:100%;
+           /* background-color:red; */
             height: 300px;
             overflow: hidden;
             border-radius: 6px;
             margin-bottom: 14px;
+            display:block;
         }
         .cover-img{
             /* height:100%; */
@@ -77,10 +78,14 @@
             $sql0 = mysqli_query($conn, "SELECT cover_image FROM user_info WHERE user_id = '{$user_id}'");
             if(mysqli_num_rows($sql) > 0){
                 while($row = mysqli_fetch_assoc($sql0)){?>
-                <div class="cover-img__container">
+                        <?php if($row['cover_image']){ ?>
+                        <div class="cover-img__container">
+                            <img src="../backend/images/cover/<?php echo $row['cover_image']; ?>" alt="cover photo" class="cover-img">
+                        </div>
 
-                    <img src="../backend/images/cover/<?php echo $row['cover_image']; ?>" alt="cover photo" class="cover-img">
-                </div>
+                        <?php
+                    } 
+                    ?>
                     <!-- <img src="../backend/images/cover/163558253158343108lambo0.jpg" alt=""> -->
                     <?php
                 }
