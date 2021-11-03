@@ -212,11 +212,7 @@
                 <!--Left-sidebar Starts HIGHLIGHT-->
                 <div class="imp-links">
                     <a href="https://indianexpress.com/section/trending/"><img src="../icons/news.png" alt="Trending News">Latest News</a>
-                    <a href="../friends-overview/index.php"><img src="../icons/friends.png" alt="Friends">Friends</a>
-                    <a href="#"><img src="../icons/group.png" alt="Group">Group</a>
-                    <a href="#"><img src="../icons/marketplace.png" alt="Market Place">Market Place</a>
-                    <a href="#"><img src="../icons/watch.png" alt="Watch">Watch</a>
-                    <a href="#">More</a>
+                    <a href="../friends-overview/index.php" target="_blank"><img src="../icons/friends.png" alt="Friends">Friends</a>
                 </div>
 
                 <div class="shortcut-links">
@@ -224,7 +220,6 @@
                     <!-- <a href="#"><img src="Images/shortcut-1.png">Stories</a> -->
                     <a href="#"><img src="../icons/shortcut-2.png">Posts</a>
                     <a href="../chat/contacts.php"><img src="../icons/shortcut-3.png">Contact Details</a>
-                    <a href="#"><img src="../icons/shortcut-4.png">History management</a>
                 </div>
 
 
