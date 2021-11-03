@@ -117,7 +117,7 @@
 <body>
    <?php include_once("../components/header/index.php");?>
 
-    <div style = "background-color: var(--dark-box);color: var(--txt-color);" >
+    <div style = "background-color: var(--dark-box);color: var(--txt-color); flex: 1; height: 100vh;" >
     <?php 
     // include_once("../header/index.php");
 

@@ -95,23 +95,6 @@ body {
 	background-color: #efefef;
 }
 
-/* .media__screen {
-	background: #fff;
-	width: 600px;
-	border-radius: 16px;
-	box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-		0 32px 64px -48px rgba(0, 0, 0, 0.5);
-
-	position: absolute;
-
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	height: 600px;
-	overflow: auto;
-} */
 .gradient-text {
 	background-image: linear-gradient(
 		to bottom right,
