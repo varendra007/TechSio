@@ -25,43 +25,7 @@
                         <div class="online image-friend">
                             <img src="../backend/images/'.$row['image'].'">
                         </div>
-                        <p style = "color: var(--txt-color);">'.$row['fname'].' ' .$row['lname'].'</p>
-                    </div>
-                </a>
-                <a href = "../friends-profile/profile-page.php?user_id='.$row['unique_id'].'" style="text-decoration: none; color: black;">
-                <div class="online-list">
-                        
-                        <div class="online image-friend">
-                            <img src="../backend/images/'.$row['image'].'">
-                        </div>
-                        <p style = "color: var(--txt-color);">'.$row['fname'].' ' .$row['lname'].'</p>
-                    </div>
-                </a>
-                <a href = "../friends-profile/profile-page.php?user_id='.$row['unique_id'].'" style="text-decoration: none; color: black;">
-                <div class="online-list">
-                        
-                        <div class="online image-friend">
-                            <img src="../backend/images/'.$row['image'].'">
-                        </div>
-                        <p style = "color: var(--txt-color);">'.$row['fname'].' ' .$row['lname'].'</p>
-                    </div>
-                </a>
-                <a href = "../friends-profile/profile-page.php?user_id='.$row['unique_id'].'" style="text-decoration: none; color: black;">
-                <div class="online-list">
-                        
-                        <div class="online image-friend">
-                            <img src="../backend/images/'.$row['image'].'">
-                        </div>
-                        <p style = "color: var(--txt-color);">'.$row['fname'].' ' .$row['lname'].'</p>
-                    </div>
-                </a>
-                <a href = "../friends-profile/profile-page.php?user_id='.$row['unique_id'].'" style="text-decoration: none; color: black;">
-                <div class="online-list">
-                        
-                        <div class="online image-friend">
-                            <img src="../backend/images/'.$row['image'].'">
-                        </div>
-                        <p style = "color: var(--txt-color);">'.$row['fname'].' ' .$row['lname'].'</p>
+                        <p>'.$row['fname'].' ' .$row['lname'].'</p>
                     </div>
                 </a>
             ';
