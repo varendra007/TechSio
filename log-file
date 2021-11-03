@@ -1,0 +1,440 @@
+[33mcommit 1f2ef1bceff42fc708d33d2deb5a802ff2d63e1d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 22:17:28 2021 +0530
+
+    clean working tree
+
+[33mcommit d6ec00c28e77c8535e2c45a765fb0fe225127277[m
+Merge: 9e1b687 67508f6
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 20:06:48 2021 +0530
+
+    Merge branch 'main' of https://github.com/varendra007/SSL-Project
+
+[33mcommit 9e1b687cce4d5062b56f02088bd6aec8e8c9edbe[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 20:06:42 2021 +0530
+
+    updated friends list
+
+[33mcommit 67508f6fc6a06cc204a7e1c9e4a9184081119ae1[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Wed Nov 3 19:56:02 2021 +0530
+
+    Update main-page.php
+
+[33mcommit 47ceb1b0960a830c7c931526ef83528ec1549711[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Wed Nov 3 19:54:32 2021 +0530
+
+    Update index.php
+
+[33mcommit e47de5aa0c02eecdaa4005d3bec7b51adb834677[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 19:22:18 2021 +0530
+
+    fixed bug in friends list
+
+[33mcommit 6c18769ffac0f4b191ca0d3818e574220bfeb008[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 18:54:38 2021 +0530
+
+    modified main page
+
+[33mcommit 8c8e08efcbde216794b71f159463ef3591076cf3[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 18:43:29 2021 +0530
+
+    fixed logout
+
+[33mcommit 511caf7451f3aa8f72bf86fb9ccce224fe0c882c[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 16:19:36 2021 +0530
+
+    remove unnecessery files
+
+[33mcommit bf0e176d2f12a5fc664195012356f9f45353b1f3[m
+Author: Varendra Maurya <88757164+varendra007@users.noreply.github.com>
+Date:   Wed Nov 3 16:14:13 2021 +0530
+
+    Update README.md
+
+[33mcommit 674d15290e1045c17d3689b007aba8ce0860fcff[m
+Author: Varendra Maurya <88757164+varendra007@users.noreply.github.com>
+Date:   Wed Nov 3 16:13:13 2021 +0530
+
+    Update README.md
+
+[33mcommit 9cf280935abee4df4da250e57ea47f71684462fb[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 16:11:51 2021 +0530
+
+    modified dark theme for profile page
+
+[33mcommit f0424f689268821e4a1140415fae638cf47bec2f[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 15:53:14 2021 +0530
+
+    fixed bug in friends-overview page
+
+[33mcommit 0e313d75a6628891360b76f59d9f2003e3f107ff[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 15:48:54 2021 +0530
+
+    Implemented dark mode for media, friends-overview & friends-profile page
+
+[33mcommit 4496c248d195381572e2d3bba31649c7eebd5bf3[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Wed Nov 3 14:47:49 2021 +0530
+
+    impemented dark mode for chat & profile page
+
+[33mcommit 43490c62133c2b79d62a956dcfea9fecd87a29dc[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Sun Oct 31 21:02:42 2021 +0530
+
+    fixed bug in login and implemented logout
+
+[33mcommit 99e29f52235ca0361ff911de17ccd039ec41250a[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Sun Oct 31 20:27:28 2021 +0530
+
+    fixed bug in remove friend feature
+
+[33mcommit 6d9f35f0fc1fe8dbca18af0beb7ae3f081ad5f73[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Sun Oct 31 17:30:48 2021 +0530
+
+    created dynamic post_manager table in db.php
+
+[33mcommit dea70611fe4261a80c6811fa8cdeafb4e40119b4[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Sun Oct 31 17:24:51 2021 +0530
+
+    updated likes counter
+
+[33mcommit 906d53fa5ece6330307f2dde9c6a2739d053e787[m
+Merge: cb22c9f 141fd39
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Sun Oct 31 13:26:26 2021 +0530
+
+    Merge branch 'main' of https://github.com/varendra007/SSL-Project
+
+[33mcommit cb22c9f0d30af50c7b5e67be91b5fff29d034c9c[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Sun Oct 31 13:25:21 2021 +0530
+
+    remove friends feature complete
+
+[33mcommit 141fd393ddd20d43711852f3342c37b3875e7174[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Sat Oct 30 23:28:53 2021 +0530
+
+    Update profile-page.css
+
+[33mcommit fbd18e697bb6910e0059abee98b88e4da5385533[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Sat Oct 30 23:23:13 2021 +0530
+
+    Update Main_Page.css
+
+[33mcommit f4403821d34141e963e4909c1de7f7d54887b696[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Sat Oct 30 22:59:31 2021 +0530
+
+    Updated gradient and colour
+
+[33mcommit a6890791e79b1480ce16f3de3f9ca3ed2a92d517[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Sat Oct 30 22:12:57 2021 +0530
+
+    Updated Gradient and Font.
+
+[33mcommit 8be2b49afff5268c09af47715dcfe3adc202d211[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Sat Oct 30 22:07:53 2021 +0530
+
+    Including The gradient
+
+[33mcommit 5f1addde1f6f9c47ae7082eab50eb3f90a6c1870[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Sat Oct 30 19:47:35 2021 +0530
+
+    Fixed bug in database
+
+[33mcommit a10c7f93f572c6241861fe8a19e8630d4d7d7b8a[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Sat Oct 30 17:43:44 2021 +0530
+
+    Edit profile and user info complete
+
+[33mcommit e988f4157c2385fc1f6ff69c678231800a1e3ee7[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Thu Oct 28 09:19:04 2021 +0530
+
+    removed some images
+
+[33mcommit fae9fba72f39528e70f6fa2f648aa90470fdd5e8[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Thu Oct 28 09:17:42 2021 +0530
+
+    static images fixed
+
+[33mcommit 652b6c4f6750c5011c5daf1adc9ed63a2676eb26[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Wed Oct 27 15:46:26 2021 +0530
+
+    Create Static Images
+
+[33mcommit f3d283703993b21cdead378780e0a78327378e83[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Wed Oct 27 10:54:00 2021 +0530
+
+    New Images
+    
+    Static Images for Project
+
+[33mcommit 9bb83f3e658344f9a9a14fc2debbab8242f7273f[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Tue Oct 26 22:04:42 2021 +0530
+
+    remove static images
+
+[33mcommit 898c10456eeafe6233e63ea6342f67bf089ad988[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Tue Oct 26 20:48:29 2021 +0530
+
+    created dynamic database & implemented search function
+
+[33mcommit 2479d772c668c5ed35ed1237e01c76adcf5bc863[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Mon Oct 25 20:57:44 2021 +0530
+
+    improved backend and styles
+
+[33mcommit d17410bffb0eba8e770695049e689a1212e4bbaa[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Tue Oct 12 20:50:04 2021 +0530
+
+    Create Profile_Page.js
+    
+    JavaScript file for Profile Page.
+
+[33mcommit 75688caa60e6cb1c629770e60d7c3067c5c4664a[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Tue Oct 12 20:49:22 2021 +0530
+
+    Create Profile_Page.css
+    
+    CSS File for Profile Page.
+
+[33mcommit d3baa23582c7f7f2eabb19e2d1c8f5fea5700317[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Tue Oct 12 20:48:21 2021 +0530
+
+    Create Profile_Page.html
+    
+    HTML code for profile page.
+
+[33mcommit 8b2cbee7d300cbfff2e49b6bb0e2fa7ecdaa73f6[m
+Author: Vinuthna5588 <90084312+Vinuthna5588@users.noreply.github.com>
+Date:   Tue Oct 12 19:12:54 2021 +0530
+
+    update styles for main page
+
+[33mcommit 09dcf4f99bacbfd2c776150febef18cdf597bc40[m
+Author: Vinuthna5588 <90084312+Vinuthna5588@users.noreply.github.com>
+Date:   Tue Oct 12 19:10:42 2021 +0530
+
+    Update Main_Page.html
+
+[33mcommit e61595a41ad7f78a3d0b34b7386abe9cb5a68053[m
+Author: Vinuthna5588 <90084312+Vinuthna5588@users.noreply.github.com>
+Date:   Tue Oct 12 18:47:15 2021 +0530
+
+    linked main page with DB
+
+[33mcommit 3dd4286b4fb3fa885ffd752ff3d72c2d58c16607[m
+Author: Vinuthna5588 <90084312+Vinuthna5588@users.noreply.github.com>
+Date:   Tue Oct 12 18:45:09 2021 +0530
+
+    updated styles of main-page, basic baceknd
+
+[33mcommit d719a9a957c14787650eea5a0393b6f4088d31f3[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Tue Oct 12 16:30:07 2021 +0530
+
+    Update Main_Page.html
+
+[33mcommit 1f90555499982059ac5f3a462a71b9d10ad1bffd[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Sun Oct 10 17:57:21 2021 +0530
+
+    Update Main_Page.html
+
+[33mcommit b08e831d978b239754e282522088d7b3ec57d163[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Thu Oct 7 23:14:09 2021 +0530
+
+    Add files via upload
+    
+    Images for Main Page and Profile Page
+
+[33mcommit 2d4bc0d9b4c67feff81f36929a5f52b036041419[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Thu Oct 7 23:11:23 2021 +0530
+
+    Create TechSio.png
+
+[33mcommit dc40b64a548b5e2480827bd34b0e615ffee07c0b[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Thu Oct 7 23:03:43 2021 +0530
+
+    Create Main_Page.js
+    
+    JavaScript file for Main Page
+
+[33mcommit 1af26714c3284936b71e9b824d393134dbe95e37[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Thu Oct 7 23:02:47 2021 +0530
+
+    Create Main_Page.css
+    
+    CSS file for Main Page
+
+[33mcommit 25f3390a5ec6984785970aa29e04f2ff4d591ee5[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Thu Oct 7 23:00:15 2021 +0530
+
+    Create Main_Page.html
+    
+    HTML code for Main Page
+
+[33mcommit 31584c908caa54b4c59fec20ff9233706af90c6e[m
+Author: Varendra Maurya <88757164+varendra007@users.noreply.github.com>
+Date:   Tue Oct 5 11:25:55 2021 +0530
+
+    Removed google authentication
+
+[33mcommit 909fb3e4233200b5af2ea46d69f2a6c402082c04[m
+Author: Varendra Maurya <88757164+varendra007@users.noreply.github.com>
+Date:   Sun Oct 3 15:59:03 2021 +0530
+
+    Update README.md
+
+[33mcommit dace9af47c7ac18b7f4363be9236db0139d32233[m
+Author: Varendra Maurya <88757164+varendra007@users.noreply.github.com>
+Date:   Sun Oct 3 15:58:04 2021 +0530
+
+    Update README.md
+
+[33mcommit 92ddbaa8f6c0f2009964fb5f38c29d9b534de1eb[m
+Author: Varendra Maurya <88757164+varendra007@users.noreply.github.com>
+Date:   Sun Oct 3 15:56:25 2021 +0530
+
+    Update README
+
+[33mcommit a1e981c3a660ac154fca366e70f810dde23d2df7[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Sun Oct 3 15:49:48 2021 +0530
+
+    new enviorment with backend created name src
+
+[33mcommit cc4ac945ef1941d862195573ddab9bbb4acd57d4[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 23:11:34 2021 +0530
+
+    Rename script.js to script.css
+
+[33mcommit 14e5e1908dcfcbab180faa15227a1ef94a76da72[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 23:11:14 2021 +0530
+
+    Create Sign Up.css
+
+[33mcommit e1eac7ea1654f7194d794bd01d92444daeb81db6[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 23:09:47 2021 +0530
+
+    Add files via upload
+    
+    Image for sign up with google.
+
+[33mcommit 5f86592bfddc286d799e950e99a8ae2ca313bbdc[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 23:08:01 2021 +0530
+
+    Update Sign Up.html
+
+[33mcommit 8d5c0f50a25555de7e7bdac04e88d36824079f80[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:55:04 2021 +0530
+
+    Rename Sign Up to Sign Up.html
+
+[33mcommit 6408350b73a91a53c9457dd22d91ac90cf10806f[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:54:49 2021 +0530
+
+    Create Sign Up
+
+[33mcommit 368e0abf336fd8e4500a7e8e2b4d84da37f36fec[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:54:25 2021 +0530
+
+    Update index.html
+
+[33mcommit 4a28c855a4b2e21df292db6898f28cec6e0bf27e[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:54:07 2021 +0530
+
+    Update index.html
+
+[33mcommit 8b5920d552530b75964076681642b419b8ce0eff[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:15:54 2021 +0530
+
+    Update script.js
+    
+    CSS file for Login
+
+[33mcommit a4ddf291f3eff417339477712cad6143b8013327[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:15:05 2021 +0530
+
+    Add files via upload
+    
+    Background Image for Login page
+
+[33mcommit c5f60f8aa651f8564d1bbe98e6c7794fb052c92e[m
+Author: Shahil Patel <83348636+shahilpatel-3602@users.noreply.github.com>
+Date:   Fri Oct 1 22:13:47 2021 +0530
+
+    Update index.html
+    
+    Login Page
+
+[33mcommit 1dba654e0979a7e94922ec69d74fb029db9d35fb[m
+Merge: b8bd539 7f131b9
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Fri Oct 1 13:03:56 2021 +0530
+
+    Merge branch 'main' of https://github.com/varendra007/SSL-Project
+
+[33mcommit b8bd53903290e993b5cc15c7a8c0c3d1f4f40f87[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Fri Oct 1 13:00:34 2021 +0530
+
+    chat and prfile page complete
+
+[33mcommit 7f131b9ac97d01133e1a7f7a754246007f7a0167[m
+Author: Varendra Maurya <88757164+varendra007@users.noreply.github.com>
+Date:   Thu Sep 30 10:00:05 2021 +0530
+
+    created README file
+
+[33mcommit ff73c56c047dc351db43e8708771011788a13de6[m
+Author: Varendra Maurya <varendramaurya@gmail.com>
+Date:   Thu Sep 30 09:45:49 2021 +0530
+
+    project initialize
