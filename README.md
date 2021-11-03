@@ -44,16 +44,4 @@ We'll work on media page bit later, if we would be able to make efficient backen
 
 Created new src folder which includes enviorment setup and backend enabled for our works. Basically it's our new enviorment where we'll work now onwards.
 
-# Task Completed
 
-- Login/Signup with manual inputs completed
-- Real time chat with front-end and backend completed
-- Backend for post completed
-- Global styles created which we can use if we need it
-
-# Remaining Tasks
-
-- Front-end for posts
-- Needs to improve profile page for front-end
-- Friends list
-- Logout Feature
