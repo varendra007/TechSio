@@ -38,7 +38,7 @@
 	--gradh: linear-gradient(to bottom right, #f88bf8, #9141e2);
 	--headerbg: linear-gradient(to bottom right, #7eb0f2, #7d2fcc);
 	--clip: polygon(52% 65%, 100% 38%, 100% 0, 0 0, 0% 38%);
-	--shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+	--shadow: rgba(10, 10, 13, 0.25) 0px 30px 60px -12px,
 		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 	--c: #eaeaea;
 	--g: #74d800;
@@ -47,7 +47,7 @@
 :root {
 	--body-color: #efefef;
 	--nav-color: #1876f2;
-	--bg-color: #fff;
+	--bg-color: #efefef;
 	--txt-color: #000;
 	--dark-box: #ffff;
 }
@@ -58,6 +58,7 @@
 	--bg-color: rgba(49, 49, 49, 0.884);
 	--txt-color: #ffff;
 	--dark-box: rgb(26, 25, 25);
+	--grad: rgb(15, 15, 15);
 }
 
 .background-image {
@@ -103,4 +104,14 @@
 .button:hover,
 .button:hover {
 	background: var(--gradh);
+}
+
+.text {
+	color: var(--txt-color);
+}
+.bg {
+	background-color: var(--bg-color);
+}
+.box {
+	background-color: var(--dark-box);
 }

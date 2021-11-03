@@ -9,7 +9,7 @@
 </head>
 <body> -->
     <!-- <div class="background-image"></div> -->
-     <nav>
+     <nav style = "background-image: var(--grad);">
         <div class="nav-left">
             <!--nav left starts-->
             <img src="../icons/TechSio.png" height="150px" width="200px" class="logo" alt="Company Logo">

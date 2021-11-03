@@ -67,15 +67,21 @@
         }
 
     </style>
+    <link rel="stylesheet" href="../global-styles.css">
+    <style>
+        h3,h1,h2,h4,h5,h6,p{
+            color: var(--txt-color);
+        }
+    </style>
 </head>
 
-<body>
+<body class  = "bg" style = "background: var(--bg-color);">
  
       
         <?php include_once("../components/header/index.php"); ?>
     <!--Profile Page-->
     <!-- HIGHLIGHT -->
-    <div class="profile-container">
+    <div class="profile-container" class = "box" style = "background-color: var(--bg-color);">
         <!--Profile container starts-->
 
                     <div class="cover-img__container"></div>
@@ -99,7 +105,7 @@
         }
         ?>
 
-        <div class="profile-details">
+        <div class="profile-details" class = "box" style = "background: var(--dark-box); color: var(--txt-color);">
             <!--profile-details starts-->
 
             <div class="pd-left">
@@ -118,14 +124,8 @@
                     ?> 
                         <img src="../backend/images/<?php echo $row['image'];?>" class="pd-image">
                         <div>
-                            <h3><?php echo $row['fname'].' '. $row['lname']; ?></h3>
-                            <!--User name should br taken from database-->
-                            <p>120 friends - 20 mutual</p>
-                            <!--No. of friends should be static and should change according to data in the database-->
-                            <!-- <img src="Images/member-1.png">
-                            <img src="Images/member-2.png">
-                            <img src="Images/member-3.png">
-                            <img src="Images/member-4.png"> -->
+                            <h3 style ="color: var(--txt-color);"><?php echo $row['fname'].' '. $row['lname']; ?></h3>
+                        
                         </div>
 
                     <?php } ?>
@@ -137,7 +137,7 @@
             <!--pd-left ends-->
 
 
-            <div class="pd-right profile-page__frnd-actions">
+            <div class="pd-right profile-page__frnd-actions" >
 
                 <!--pd-right starts-->
                 <div class="frnd-actions">
@@ -174,15 +174,15 @@
         </div>
         <!--profile-details ends-->
 
-        <div class="profile-info">
+        <div class="profile-info" >
             <!--profile info starts-->
 
             <div class="info-col">
                 <!--info col starts-->
 
-                <div class="profile-intro">
+                <div class="profile-intro" style = "background: var(--dark-box);">
                     <!--profile intro starts-->
-                    <h3> Intro </h3>
+                    <h3 > Intro </h3>
                    <?php 
                         $sqli = mysqli_query($conn, "SELECT * FROM user_info WHERE user_id = '{$user_id}'");
                         if(mysqli_num_rows($sqli) > 0){
@@ -214,7 +214,7 @@
                 </div>
                 <!--profile intro ends-->
 
-                <div class="profile-intro">
+                <div class="profile-intro" style = "background: var(--dark-box);">
                     <!--profile intro starts-->
                     <div class="title-box">
                         <h3>Photos</h3>
@@ -242,7 +242,7 @@
                 </div>
                 <!--profile intro ends-->
 
-                <div class="profile-intro">
+                <div class="profile-intro" style = "background: var(--dark-box);">
                     <!--profile intro starts-->
                     <div class="title-box">
                         <h3>Friends</h3>

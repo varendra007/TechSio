@@ -16,13 +16,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="media-style.css">
     <link rel="stylesheet" href="../components/header/header.css">
-    <!-- <link rel="stylesheet" href="header.css"> -->
-    <!-- <link rel="stylesheet" href=""> -->
+    
     <style>
     body{
         display: block;
         /* overflow: hidden; */
+        background: var(--bg-color);
+        color: var(--txt-color);
 
+    }
+    h1,h2,h3,h4,h5,h6,p{
+        color: var(--txt-color);
     }
     .screen{
         display:flex;
@@ -42,6 +46,7 @@
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../global-styles.css">
 </head>
 
 <body>
@@ -53,32 +58,11 @@
 
 
     <!-- main screen -->
-        <div class= "screen">
+        <div class= "screen" style  = "background: var(--bg-color);">
             
-            <!-- <div class="left-sidebar" style="overflow-x: auto; height: 100%;">
 
-                Left-sidebar Starts HIGHLIGHT
-                <div class="imp-links">
-                    <a href="https://indianexpress.com/section/trending/"><img src="Images/news.png" alt="Trending News">Latest News</a>
-                    <a href="../friends-overview/index.php"><img src="Images/friends.png" alt="Friends">Friends</a>
-                    <a href="#"><img src="Images/group.png" alt="Group">Group</a>
-                    <a href="#"><img src="Images/marketplace.png" alt="Market Place">Market Place</a>
-                    <a href="#"><img src="Images/watch.png" alt="Watch">Watch</a>
-                    <a href="#">More</a>
-                </div>
-
-                <div class="shortcut-links">
-                    <p>Shortcuts</p>
-                    <a href="#"><img src="Images/shortcut-1.png">Stories</a>
-                    <a href="#"><img src="Images/shortcut-2.png">Posts</a>
-                    <a href="../chat/contacts.php"><img src="Images/shortcut-3.png">Contact Details</a>
-                    <a href="#"><img src="Images/shortcut-4.png">History management</a>
-                </div>
-
-
-            </div> -->
-            <?php include_once("../components/shortcuts/index.php");?>
-            <div class = "new-post_container" style = "flex:1;">
+               <?php include_once("../components/shortcuts/index.php");?>
+            <div class = "new-post_container" style = "flex:1; background: var(--bg-color);">
 
             <header>
                 <h3 class="gradient-text">Add New Post</h3>
@@ -93,11 +77,11 @@
                     </div>
                     <div class="field input">
                         <label for="">Comment<font style="color: red;">*</font></label>
-                        <textarea type="text" name="comment" placeholder="Add few words..." required></textarea>
+                        <textarea style = "background: var(--dark-box); color: var(--txt-color);" type="text" name="comment" placeholder="Add few words..." required></textarea>
                     </div>
 
                     <div class="field">
-                        <input type="submit" value="Add new post" class="post__btn__submit">
+                        <input style = "background: linear-gradient(to bottom right, #f27ef2, #7d2fcc)"  type="submit" value="Add new post" class="post__btn__submit">
                     </div>
                 </form>
             </div>

@@ -25,7 +25,7 @@
                         <div class="online image-friend">
                             <img src="../backend/images/'.$row['image'].'">
                         </div>
-                        <p>'.$row['fname'].' ' .$row['lname'].'</p>
+                        <p style = "color: var(--txt-color);">'.$row['fname'].' ' .$row['lname'].'</p>
                     </div>
                 </a>
             ';

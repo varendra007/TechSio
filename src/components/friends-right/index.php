@@ -91,7 +91,7 @@
 
 
 
-  <div class="right-sidebar" style="height: 100%; overflow-x: auto;">
+  <div class="right-sidebar" style="height: 100%; overflow-x: auto; background: var(--dark-box);">
 
     <!-- <div class="search__container" style="width: 100%;">
       <input class="search__input" type="text" placeholder="Search" style="width: 90%;">
@@ -99,7 +99,7 @@
         <i class="fas fa-search"></i>
       </div>
     </div> -->
-    <div class="main-page__contacts" style = "backround: var(--bg-color); color: var(--txt-color);"></div>
+    <div class="main-page__contacts" style = "color: var(--txt-color);"></div>
 
 
   </div>

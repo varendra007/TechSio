@@ -19,11 +19,13 @@
     <title>Document</title>
     <style>
         body {
-            background: #efefef;
+            /* background: #efefef; */
+            /* background: red; */
             transition: background 0.3s;
+            flex: 1;
         }
         .profile-details {
-            background:#fff;
+            /* background:#fff; */
             padding: 20px;
             border-radius: 4px;
             display: flex;
@@ -106,7 +108,7 @@
     <script src="script.js" async defer></script>
     <style>
         body{
-            bacground: var(--bg-color);
+            background: var(--bg-color);
             color: var(--txt-color);
         }
     </style>
@@ -115,7 +117,7 @@
 <body>
    <?php include_once("../components/header/index.php");?>
 
-    <div >
+    <div style = "background-color: var(--dark-box);color: var(--txt-color);" >
     <?php 
     // include_once("../header/index.php");
 
@@ -126,7 +128,7 @@
         ?>
 
 
-        <div class="profile-details" >
+        <div class="profile-details"  style = "border: 2px solid var(--c);"  >
             <!--profile-details starts-->
 
             <div class="pd-left">
@@ -139,10 +141,10 @@
                         <img src="../backend/images/<?php echo $row['image'];?>" class="pd-image">
                         <div>
                         
-                            <h3><?php echo $row['fname'].' '. $row['lname']; ?></h3>
+                            <h3 class = "text" style  = "color: var(--txt-color);"><?php echo $row['fname'].' '. $row['lname']; ?></h3>
                             
                             <!--User name should br taken from database-->
-                            <p>120 friends - 20 mutual</p>
+                            <!-- <p>120 friends - 20 mutual</p> -->
                             <!--No. of friends should be static and should change according to data in the database-->
                             <!-- <img src="/member-1.png">
                             <img src="Images/member-2.png">
