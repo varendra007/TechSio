@@ -249,8 +249,8 @@
                         <!-- <img src="Images/profile-pic.png"> -->
                          <img src="../backend/images/<?php echo $row['image']; ?>" class="avtar">
                         <div>
-                            <p>  <?php echo $row['fname']." ". $row['lname']; ?></p><br>
-                            <small>Public </small>
+                            <p style = "color: var(--txt-color);">  <?php echo $row['fname']." ". $row['lname']; ?></p><br>
+                            <small style = "color: var(--txt-color);">Public </small>
                         </div>
                     </div>
                     <!--User profile ends-->
@@ -299,11 +299,11 @@
                                         <div class="user-profile">
                                             <img src="../backend/images/<?php echo $row['user_image']; ?>">
                                             <div>
-                                                <p><?php echo $row['fname'].' ' .$row['lname']; ?></p><br>
-                                                <span><?php $row['date'] ?></span>
+                                                <p style = "color: var(--txt-color);"><?php echo $row['fname'].' ' .$row['lname']; ?></p><br>
+                                                <span style = "color: var(--txt-color);"><?php $row['date'] ?></span>
                                             </div>
                                         </div>
-                                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                        <!-- <a href="#"><i class="fas fa-ellipsis-v"></i></a> -->
                                     </div>
 
                                     <p class="post-text"><?php echo $row['comment']; ?></p>
@@ -311,7 +311,7 @@
 
 
                                     <div class="post-row">
-                                        <div class="activity-icons">
+                                        <div class="activity-icons" style = "">
                                             <div style = "justify-content:center" >
                                                 <div class = "likes-btn-handler<?php echo $row['post_id']; ?>">
                                                     <?php
@@ -333,19 +333,19 @@
                                                 </div>
                                                 
 
-                                                <span id  = "like_id<?php echo $row['post_id']; ?>"  >
+                                                <span id  = "like_id<?php echo $row['post_id']; ?>" style = "color: var(--txt-color);" >
 
                                                     <?php echo $row['likes']; ?>
                                                 </span> 
                                             
                                             </div>
                                       
-                                            <div><img src="Images/comments.png">40</div>
-                                            <div><img src="Images/share.png">10</div>
+                                            <!-- <div><img src="Images/comments.png">40</div>
+                                            <div><img src="Images/share.png">10</div> -->
                                         </div>
 
                                         <div class="post-profile-icon">
-                                            <img src="../backend/images/<?php echo $row['user_image']; ?>"><i class="fas fa-caret-down"></i>
+                                            <img src="../backend/images/<?php echo $row['user_image']; ?>">
                                         </div>
                                     </div>
                                 </div>

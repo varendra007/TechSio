@@ -99,7 +99,7 @@
         <i class="fas fa-search"></i>
       </div>
     </div> -->
-    <div class="main-page__contacts" style = "color: var(--txt-color);"></div>
+    <div class="main-page__contacts" style = "color: var(--txt-color); height: 78vh; overflow-x: hidden;"></div>
 
 
   </div>
