@@ -15,13 +15,13 @@
             <div class="online image-friend">
               <img src="../backend/images/'.$row['image'].'">
             </div>
-            <p>'.$row['fname'].' ' .$row['lname'].'</p>
+            <p style = "color: var(--txt-color);">'.$row['fname'].' ' .$row['lname'].'</p>
           </div>
         </a>
       ';
     }
   }else{
-    $output .= '<p style ="padding:20px 10px; text-align:center;" >No users found.</p>';
+    $output .= '<p style ="padding:20px 10px; text-align:center;color: var(--txt-color);" >No users found.</p>';
   }
 
   echo $output;

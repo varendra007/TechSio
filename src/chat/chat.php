@@ -29,24 +29,29 @@
 
     .msg__frnd {
         border-radius: 200px;
-        background-color: #ffffff;
+        background-color: var(--bg-color);
+        color: var(--txt-color);
         /* box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 6px -1px,
             rgba(0, 0, 0, 0.3) 0px 0px 3px -10px; */
 
         border: 0;
     }
-
+   
     .middle,.footer {
         /* background-color: rgba(146, 230, 202, 0.178); */
-        background:#ffff;
+        background:var(--bg-color);
+        color: var(--txt-color);
     }
      .top {
         /* background: #87CEEB; */
-        background-image: linear-gradient(to bottom right, #87ceeb, #20b1eb);
+        /* background-image: linear-gradient(to bottom right, #87ceeb, #20b1eb); */
+        background-image: linear-gradient(to bottom right, #f27ef2, #7d2fcc);
     }
     
 .right{
     flex: 1;
+    background: var(--bg-color);
+    color: var(--txt-color);
 }
 .send{
     display: flex;
@@ -64,17 +69,33 @@
 .msg__input{
     padding-left: 10px;
     padding-right: 10px;
+    background: var(--bg-color);
+    color: var(--txt-color);
 }
 .box{
     width:100%;
+    background: var(--bg-color);
+    color: var(--txt-color);
     /* display: inline; */
     /* display: block; */
     justify-content: flex-start;
     /* top:0; */
 
 }
+/* .middle{
+    background: var(--bg-color);
+} */
+.msg__form,.footer,.middle,.msg__input{
+    background: var(--bg-color);
+    color: var(--txt-color);
+}
+.right__top{
+    color: var(--txt-color);
+}
 body{
     display: block;
+    background: var(--bg-color);
+    color: var(--txt-color);
 }
     </style>
 </head>
@@ -93,7 +114,7 @@ body{
             <div class= "right">
 
                 <div >
-                    <div class="right__top"> 
+                    <div class="right__top" style = "color: var(--txt-color);"> 
                     
 
                         <?php 
@@ -106,7 +127,7 @@ body{
 
                             <img src="../backend/images/<?php echo $row['image']; ?>" class="avtar">
                             <div>
-                                <h3><?php echo $row['fname']." ". $row['lname']; ?></h3>
+                                <h3 style = "color: var(--txt-color);"><?php echo $row['fname']." ". $row['lname']; ?></h3>
                                 <p style="margin-left: 10px;"><span style="color: greenyellow;"><?php echo $row['status']; ?></span></p>
                             </div>
                                     <!-- <img src="../icons/TechSio.png" alt=""> -->
@@ -116,7 +137,7 @@ body{
                         ?>
                     </div> 
 
-                    <div class="middle chat-area" style =""> </div>
+                    <div class="middle chat-area" style ="color: var(--txt-color);"> </div>
                     
                     
 

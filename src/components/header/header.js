@@ -25,3 +25,8 @@ if (localStorage.getItem('theme') == 'light') {
 	localStorage.setItem('theme', 'light');
 }
 localStorage.getItem('theme');
+
+function changeMode() {
+	var element = document.body;
+	element.classList.toggle('dark-mode');
+}

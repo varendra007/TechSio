@@ -20,6 +20,10 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <style>
+      body{
+        background: var(--bg-color);
+        color: var(--txt-color);
+      }
     
         
       .edit {
@@ -52,6 +56,8 @@
           border: 1px solid #ccc;
           border-radius: 5px;
           padding: 0 10px;
+          background: var(--dark-box);
+          color: var(--txt-color);
       }
 
       .form {
@@ -98,6 +104,7 @@
       .edit-profile__root {
           display: flex;
           flex:1
+          /* background: var(--bg-color); */
       }
       .edit-screen{
         display: flex;

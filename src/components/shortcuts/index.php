@@ -22,7 +22,7 @@
 
     
     .left-sidebar {
-      background: #ffff;
+      background: var(--bg-color);
       flex-basis: 25%;
       position: sticky;
       top: 70px;
@@ -36,7 +36,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 30px;
-      color: #626262;
+      color: var(--txt-color);
       width: fit-content;
     }
 

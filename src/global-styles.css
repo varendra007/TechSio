@@ -16,10 +16,10 @@
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-	/* box-shadow: inset 0 0 5px grey;
-	border-radius: 10px; */
-}
+/* ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+} */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -42,6 +42,22 @@
 		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 	--c: #eaeaea;
 	--g: #74d800;
+}
+
+:root {
+	--body-color: #efefef;
+	--nav-color: #1876f2;
+	--bg-color: #fff;
+	--txt-color: #000;
+	--dark-box: #ffff;
+}
+
+.dark-theme {
+	--body-color: #0a0a0a;
+	--nav-color: #000;
+	--bg-color: rgba(49, 49, 49, 0.884);
+	--txt-color: #ffff;
+	--dark-box: rgb(26, 25, 25);
 }
 
 .background-image {

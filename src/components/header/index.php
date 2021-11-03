@@ -51,7 +51,7 @@
                     </div>
                 </div>
             
-                <div id = "search__list" class = "search_list" style = ""></div>
+                <div id = "search__list" class = "search_list" style = "background: var(--bg-color);box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);color: var(--txt-color);"></div>
                 
             </div>
 
@@ -73,7 +73,7 @@
                         <!--User profile starts-->
                         <img style="width: 45px; height: 45px; border-radius: 50%; margin-right: 10px;" src="../backend/images/<?php echo $row['image']; ?>" class="avtar">
                         <div>
-                            <p> <?php echo $row['fname']." ". $row['lname']; ?></p>
+                            <p style = "color: var(--txt-color);"> <?php echo $row['fname']." ". $row['lname']; ?></p>
                             <p><span class="status__active" style = "color:rgb(30,216,46);">
                                 <?php echo $row['status']; ?>
                                 </span></p>
@@ -84,17 +84,7 @@
                 </a>
                 <!--User profile ends-->
                 <hr>
-                <div class="user-profile">
-                    <!--User profile starts-->
-                    <img src="../icons/feedback.png">
-                    
-                    <div>
-                        <p> FeedBack </p><br>
-                        <a href="#">Help us to Improve</a>
-                    </div>
-                </div>
-                <!--User profile ends-->
-                <hr>
+              
 
                 <div class="settings-links">
                     <!--Setting links starts-->
@@ -103,18 +93,10 @@
                 </div>
                 <!--Setting links ends-->
 
-                <div class="settings-links">
-                    <!--help starts-->
-                    <img src="../icons/help.png" class="settings-icon">
-                    <a href="#">Help <img src="../icons/arrow.png" width="10px"></a>
-                </div>
+                <!--  -->
                 <!--help ends-->
 
-                <div class="settings-links">
-                    <!--Display starts-->
-                    <img src="../icons/display.png" class="settings-icon">
-                    <a href="#">Display & Accessibilty <img src="../icons/arrow.png" width="10px"></a>
-                </div>
+                
                 <!--Display ends-->
 
                 <div class="settings-links">

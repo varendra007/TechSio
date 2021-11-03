@@ -99,7 +99,7 @@
         <i class="fas fa-search"></i>
       </div>
     </div> -->
-    <div class="main-page__contacts"></div>
+    <div class="main-page__contacts" style = "backround: var(--bg-color); color: var(--txt-color);"></div>
 
 
   </div>
