@@ -203,7 +203,7 @@
             <!--Settings menu ends-->
 
         </nav>
-        <div class="container" style="height: 75%; overflow: hidden; bottom: 0; position: fixed;">
+        <div class="container" style="height: 75%; overflow: hidden; bottom: 0; position: fixed; min-width: 100%;">
             <!--Container Starts -->
 
             <div class="left-sidebar" style="overflow-y: auto; height: 100%; overflow-x: hidden;">
@@ -250,7 +250,7 @@
                          <img src="../backend/images/<?php echo $row['image']; ?>" class="avtar">
                         <div>
                             <p>  <?php echo $row['fname']." ". $row['lname']; ?></p><br>
-                            <small>Public <i class="fas fa-sort-down"></i></small>
+                            <small>Public </small>
                         </div>
                     </div>
                     <!--User profile ends-->
@@ -280,45 +280,15 @@
                 </div>
                 <!--Write post container end-->
                 <div class = "main-page__posts">
-                    <!-- <div class="post-container">
-                        <div class="post-row">
-
-                            <div class="user-profile">
-                                <img src="Images/profile-pic.png">
-                                <div>
-                                    <p> User </p><br>
-                                    <span>6 th October 2021</span>
-                                </div>
-                            </div>
-                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                        </div>
-
-                        <p class="post-text">My post <span>Work-life</span>
-                            <a href="#"> Microsoft <i class="fas fa-caret-down"> </i></a>
-                        </p>
-                        <img src="Images/feed-image-1.png" class="post-img">
-
-
-                        <div class="post-row">
-                            <div class="activity-icons">
-                                <div><img src="Images/like-blue.png">120</div>
-                                <div><img src="Images/comments.png">40</div>
-                                <div><img src="Images/share.png">10</div>
-                            </div>
-
-                            <div class="post-profile-icon">
-                                <img src="Images/profile-pic.png"><i class="fas fa-caret-down"></i>
-                            </div>
-                        </div>
-                    </div> -->
+                  
 
                     <?php 
                         $sql = mysqli_query($conn, "SELECT p.user_id, p.image AS post_image, p.likes, p.comment, p.date,p.post_id, u.image AS user_image, u.fname, u.lname FROM posts AS p JOIN users AS u WHERE u.unique_id = p.user_id;");
 
                         if(mysqli_num_rows($sql) == 0){
                         ?>
-                           
-                            <h3>No Posts are available! Try updating some.</h3>
+                           <br><br><br>
+                            <h3 style = "color: var(--txt-color); text-align: center; font-weight: 500;">No Posts are available! Try updating some.</h3>
                         <?php    
                         }elseif(mysqli_num_rows($sql) > 0){
                             while( $row = mysqli_fetch_assoc($sql)){
@@ -388,7 +358,7 @@
                 </div>
                 <!--post container ends-->
 
-                <button type="button" class="load-more-btn">Load More</button>
+                <!-- <button type="button" class="load-more-btn">Load More</button> -->
 
             </div>
             <!--Main content ends-->
