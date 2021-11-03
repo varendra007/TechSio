@@ -38,6 +38,7 @@
         .button a{
             text-decoration: none;
             color: #fff;
+            background: linear-gradient(to bottom right, #f88bf8, #9141e2);
         }
         .button:hover,
         .button:hover {
@@ -59,8 +60,12 @@
             /* height:100%; */
             /* width:auto; */
         }
+        h1,h2,h3,h4,h5,h6,p,li{
+            color: var(--txt-color);
+        }
 
     </style>
+    <link rel="stylesheet" href="../global-styles.css">
 </head>
 
 <body>
@@ -68,7 +73,7 @@
        
     <?php include_once("../components/header/index.php");  ?>
     <!--Profile Page-->
-    <div class="profile-container">
+    <div class="profile-container" style = "background: var(--bg-color);">
         <!--Profile container starts-->
 
 
@@ -94,13 +99,13 @@
 
  
 
-        <div class="profile-info">
+        <div class="profile-info" >
             <!--profile info starts-->
 
             <div class="info-col">
                 <!--info col starts-->
 
-                <div class="profile-intro">
+                <div class="profile-intro" style = "background: var(--dark-box);">
                     <!--profile intro starts-->
                     <h3> Intro </h3>
                     <?php 
@@ -134,7 +139,7 @@
                 </div>
                 <!--profile intro ends-->
 
-                <div class="profile-intro">
+                <div class="profile-intro" style = "background: var(--dark-box);">
                     <!--profile intro starts-->
                     <div class="title-box">
                         <h3>Photos</h3>
@@ -162,13 +167,13 @@
                 </div>
                 <!--profile intro ends-->
 
-                <div class="profile-intro">
+                <div class="profile-intro" style = "background: var(--dark-box);">
                     <!--profile intro starts-->
                     <div class="title-box">
                         <h3>Friends</h3>
                         <a href="#">All friends</a>
                     </div>
-                    <p>120(10 mutual)</p>
+                    <!-- <p>120(10 mutual)</p> -->
                     <div class="friends-box">
                         <!--photo box starts-->
                         
@@ -204,7 +209,7 @@
             <div class="post-col">
                 <!--post-col starts-->
 
-              <div class="write-post-container">
+              <div class="write-post-container" style = "background: var(--dark-box);">
                 <?php 
                 // include_once("../backend/config.php");
                 $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
@@ -230,7 +235,7 @@
                             <a href="#"><img src="Images/photo.png">Photo/Video</a>
                             <a href="#"><img src="Images/feeling.png">Emojis</a>
                         </div> -->
-                        <div class = "button">
+                        <div class = "button" style = "background: linear-gradient(to bottom right, #f88bf8, #9141e2);">
 
                             <a href="../media/new-post.php"  class = "main-page__add-new-post-btn" style = "width: 100%;">
                             <div style = "width: 100%;">NEW POST
@@ -261,20 +266,20 @@
                         }elseif(mysqli_num_rows($sql) > 0){
                             while( $row = mysqli_fetch_assoc($sql)){
                         ?>
-                                <div class="post-container">
+                                <div class="post-container" style = "background: var(--dark-box);">
                                     <div class="post-row">
 
                                         <div class="user-profile">
                                             <img src="../backend/images/<?php echo $row['user_image']; ?>">
                                             <div>
-                                                <p><?php echo $row['fname'].' ' .$row['lname']; ?></p><br>
+                                                <p style = "color: var(--txt-color);"><?php echo $row['fname'].' ' .$row['lname']; ?></p><br>
                                                 <span><?php $row['date'] ?></span>
                                             </div>
                                         </div>
                                         <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                                     </div>
 
-                                    <p class="post-text"><?php echo $row['comment']; ?></p>
+                                    <p class="post-text" style = "color: var(--txt-color);"><?php echo $row['comment']; ?></p>
                                     <img  src="../backend/images/post/<?php echo $row['post_image'];?>"  class="post-img">
 
 
@@ -301,7 +306,7 @@
                                                 </div>
                                                 
 
-                                                <span id  = "like_id<?php echo $row['post_id']; ?>"  >
+                                                <span id  = "like_id<?php echo $row['post_id']; ?>"  style = "color: var(--txt-color);">
 
                                                     <?php echo $row['likes']; ?>
                                                 </span> 

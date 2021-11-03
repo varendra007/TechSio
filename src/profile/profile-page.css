@@ -5,18 +5,6 @@
 	box-sizing: border-box;
 }
 
-:root {
-	--body-color: #efefef;
-	--grad: linear-gradient(to bottom right, #f27ef2, #7d2fcc);
-	--bg-color: #fff;
-}
-
-.dark-theme {
-	--body-color: #0a0a0a;
-	--grad: #000;
-	--bg-color: #000;
-}
-
 body {
 	background: var(--body-color);
 	transition: background 0.3s;
@@ -125,7 +113,7 @@ nav {
 	margin-right: 20px;
 }
 .imp-links a:last-child {
-	color:#BA55D3;
+	color: #ba55d3;
 }
 .imp-links {
 	border-bottom: 3px #626262;
@@ -152,7 +140,7 @@ nav {
 	font-size: 15px;
 }
 .sidebar-title a {
-	color:#BA55D3;
+	color: #ba55d3;
 	font-size: 13px;
 }
 .event {
@@ -173,19 +161,19 @@ nav {
 }
 .event p {
 	font-size: 13px;
-	color:#BA55D3;
+	color: #ba55d3;
 }
 .event a {
 	font-size: 12px;
 	text-decoration: none;
-	color:#BA55D3;
+	color: #ba55d3;
 }
 .left-event span {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background:#BA55D3;
+	background: #ba55d3;
 	color: #fff;
 	font-size: 10px;
 	padding: 4px 0;
@@ -234,7 +222,7 @@ nav {
 	border-radius: 50%;
 	top: 10px;
 	left: 10px;
-	color:#BA55D3;
+	color: #ba55d3;
 	border: 5px solid #1876f2;
 }
 .story p {
@@ -413,7 +401,7 @@ nav {
 
 .user-profile a {
 	font-size: 12px;
-	color:#BA55D3;
+	color: #ba55d3;
 }
 .settings-menu-inner {
 	padding: 20px;
@@ -593,7 +581,7 @@ nav {
 	justify-content: space-between;
 }
 .title-box a {
-	color:#BA55D3;
+	color: #ba55d3;
 	font-size: 14px;
 }
 .photo-box {
