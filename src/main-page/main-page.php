@@ -175,38 +175,15 @@
                     </a>
                     <!--User profile ends-->
                     <hr>
-                    <div class="user-profile">
-                        <!--User profile starts-->
-                        <img src="../icons/feedback.png">
-                       
-                        <div>
-                            <p> FeedBack </p><br>
-                            <a href="#">Help us to Improve</a>
-                        </div>
-                    </div>
+                   
                     <!--User profile ends-->
-                    <hr>
 
                     <div class="settings-links">
                         <!--Setting links starts-->
                         <img src="../icons/setting.png" class="settings-icon">
-                        <a href="#">Settings & Privacy <img src="../icons/arrow.png" width="10px"></a>
+                        <a href="../backend/authentication/logout.php">Edit Profile <img src="../icons/arrow.png" width="10px"></a>
                     </div>
-                    <!--Setting links ends-->
-
-                    <div class="settings-links">
-                        <!--help starts-->
-                        <img src="../icons/help.png" class="settings-icon">
-                        <a href="#">Help <img src="../icons/arrow.png" width="10px"></a>
-                    </div>
-                    <!--help ends-->
-
-                    <div class="settings-links">
-                        <!--Display starts-->
-                        <img src="../icons/display.png" class="settings-icon">
-                        <a href="#">Display & Accessibilty <img src="../icons/arrow.png" width="10px"></a>
-                    </div>
-                    <!--Display ends-->
+                    
 
                     <div class="settings-links">
                         <!--Logout starts-->
