@@ -117,9 +117,9 @@
                 <!--nav left starts-->
                 <img src="../icons/TechSio.png" height="150px" width="200px" class="logo" alt="Company Logo">
                 <ul>
-                    <li><img src="../icons/notification.png" alt="Notifications"></li>
+                    <!-- <li><img src="../icons/notification.png" alt="Notifications"></li>
                     <li><img src="../icons/inbox.png" alt="Inbox"></li>
-                    <li><img src="../icons/message.png" alt="Message"></li>
+                    <li><img src="../icons/message.png" alt="Message"></li> -->
                 </ul>
             </div>
             <?php 
@@ -211,15 +211,15 @@
 
                 <!--Left-sidebar Starts HIGHLIGHT-->
                 <div class="imp-links">
-                    <a href="https://indianexpress.com/section/trending/"><img src="../icons/news.png" alt="Trending News">Latest News</a>
-                    <a href="../friends-overview/index.php" target="_blank"><img src="../icons/friends.png" alt="Friends">Friends</a>
+                    <a href="https://indianexpress.com/section/trending/" target="_blank"><img src="../icons/news.png" alt="Trending News">Latest News</a>
+                    <a href="../friends-overview/index.php" ><img src="../icons/friends.png" alt="Friends">Friends</a>
                 </div>
 
                 <div class="shortcut-links">
                     <p>Shortcuts</p>
                     <!-- <a href="#"><img src="Images/shortcut-1.png">Stories</a> -->
-                    <a href="#"><img src="../icons/shortcut-2.png">Posts</a>
-                    <a href="../chat/contacts.php"><img src="../icons/shortcut-3.png">Contact Details</a>
+                    <a href="../profile/profile-page.php"><img src="../icons/shortcut-2.png">Posts</a>
+                    <a href="../friends-overview/index.php"><img src="../icons/shortcut-3.png">Contacts</a>
                 </div>
 
 

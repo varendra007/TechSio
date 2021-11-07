@@ -313,12 +313,11 @@
                                             
                                             </div>
                                       
-                                            <div><img src="Images/comments.png">40</div>
-                                            <div><img src="Images/share.png">10</div>
+                                          
                                         </div>
 
                                         <div class="post-profile-icon">
-                                            <img src="../backend/images/<?php echo $row['user_image']; ?>"><i class="fas fa-caret-down"></i>
+                                            <img src="../backend/images/<?php echo $row['user_image']; ?>">
                                         </div>
                                     </div>
                                 </div>

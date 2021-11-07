@@ -90,8 +90,8 @@
         <div class="shortcut-links">
           <p>Shortcuts</p>
           <!-- <a href="#"><img src="Images/shortcut-1.png">Stories</a> -->
-          <a href="#"><img src="../icons/shortcut-2.png">Posts</a>
-          <a href="../chat/contacts.php"><img src="../icons/shortcut-3.png">Contact Details</a>
+          <a href="../profile/prfile-page.php"><img src="../icons/shortcut-2.png">Posts</a>
+          <a href="../friends-overview/index.php"><img src="../icons/shortcut-3.png">Contacts</a>
           
         </div>
 

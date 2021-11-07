@@ -37,12 +37,11 @@
                         <div class="post-row">
                             <div class="activity-icons">
                                 <div><img src="../icons/like-blue.png">'.$row['likes'].'</div>
-                                <div><img src="../icons/comments.png">40</div>
-                                <div><img src="../icons/share.png">10</div>
+                               
                             </div>
 
                             <div class="post-profile-icon">
-                                <img src="../backend/images/'.$row['user_image'].'"><i class="fas fa-caret-down"></i>
+                                <img src="../backend/images/'.$row['user_image'].'">
                             </div>
                         </div>
                     </div>

@@ -14,9 +14,9 @@
             <!--nav left starts-->
             <img src="../icons/TechSio.png" height="150px" width="200px" class="logo" alt="Company Logo">
             <ul>
-            <li style="color: #fff; margin: 0 15px;"><i class="fas fa-bell fa-2x" style="color: #ffff;"></i></li>
+            <!-- <li style="color: #fff; margin: 0 15px;"><i class="fas fa-bell fa-2x" style="color: #ffff;"></i></li>
             <li style="margin: 0 15px;"><i class="fas fa-envelope fa-2x" style="color: #fff;"></i></li>
-            <li style="margin: 0 15px;"><i class="fas fa-comment-alt fa-2x" style="color: #fff;"></i></li>
+            <li style="margin: 0 15px;"><i class="fas fa-comment-alt fa-2x" style="color: #fff;"></i></li> -->
             </ul>
         </div>
         <?php 
@@ -47,7 +47,7 @@
                     </div>
                     <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                         <!-- <img src="Images/profile-pic.png" height="70px"> -->
-                        <img src="../backend/images/<?php echo $row['image']; ?>"  height = "70px" class="avtar">
+                        <img src="../backend/images/<?php echo $row['image']; ?>"  height = "70px" class="avtar" style="width:70px;height: 70px; border-radius: 35px;">
                     </div>
                 </div>
             

@@ -127,8 +127,7 @@
         while($row = mysqli_fetch_assoc($sql)){
         ?>
 
-
-        <div class="profile-details"  style = "border: 2px solid var(--c);"  >
+            <div class="profile-details"  style = "border: 2px solid var(--c);"  >
             <!--profile-details starts-->
 
             <div class="pd-left">
@@ -162,6 +161,7 @@
 
             <div class="pd-right profile-page__frnd-actions">
 
+                <a href="../friends-profile/profile-page.php?user_id=<?php echo $row['unique_id']; ?>"style="padding: 5px;">Profile</a>
             
 
                 <a href="../chat/chat.php?user_id=<?php echo $row['friend_id']; ?>"
@@ -170,7 +170,8 @@
 
                 <!--button for adding friends-->
                 <br>
-                <a href="#"><img src="../icons/more.png"></a>
+
+                <!-- <a href="#"><img src="../icons/more.png"></a> -->
 
             </div>
             <!--pd-right ends-->
