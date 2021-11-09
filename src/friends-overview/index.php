@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../global-styles.css">
     <!-- <link rel="stylesheet" href="../headerStyles.css"> -->
-    <title>Document</title>
+    <title>Friends</title>
     <style>
         body {
             /* background: #efefef; */
