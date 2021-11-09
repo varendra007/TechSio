@@ -14,13 +14,13 @@
                 if($row['outgoing_msg_id'] === $outgoing_id){
                     $output .= '
                             <div class="msg__my">
-                                <p>'. $row['message'].'</p>
+                                <p style = "color: var(--txt-color);">'. $row['message'].'</p>
                             </div>
                             ';
                 }else{
                      $output .= '
                             <div class="msg__frnd">
-                                <p>'. $row['message'].'</p>
+                                <p style = "color: var(--txt-color);">'. $row['message'].'</p>
                             </div>
                             ';
                 }

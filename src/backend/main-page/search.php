@@ -1,5 +1,6 @@
 <?php
   include_once("../config.php");
+  session_start();
   // echo "success";
   $search = mysqli_real_escape_string($conn, $_POST['searchTerm']);
   $name = explode(" ",$search);
@@ -8,6 +9,9 @@
   if(mysqli_num_rows($sql) > 0){
                               
     while( $row = mysqli_fetch_assoc($sql)){
+      if($row['unique_id'] != $_SESSION['unique_id']){
+
+      
       $output .= '
         <a href = "../friends-profile/profile-page.php?user_id='.$row['unique_id'].'" style="text-decoration: none; color: black;">
           <div class="online-list" style = "padding:5px 10px;">
@@ -19,6 +23,7 @@
           </div>
         </a>
       ';
+      }
     }
   }else{
     $output .= '<p style ="padding:20px 10px; text-align:center;color: var(--txt-color);" >No users found.</p>';

@@ -88,7 +88,7 @@
 
                 <div class="settings-links">
                     <!--Setting links starts-->
-                    <img src="Images/setting.png" class="settings-icon">
+                    <img src="../icons/setting.png" class="settings-icon">
                     <a href="../edit-profile/index.php">Edit Profile<img src="../icons/arrow.png" width="10px"></a>
                 </div>
                 <!--Setting links ends-->

@@ -181,7 +181,7 @@
                     <div class="settings-links">
                         <!--Setting links starts-->
                         <img src="../icons/setting.png" class="settings-icon">
-                        <a href="../backend/authentication/logout.php">Edit Profile <img src="../icons/arrow.png" width="10px"></a>
+                        <a href="../edit-profile/index.php">Edit Profile <img src="../icons/arrow.png" width="10px"></a>
                     </div>
                     
 

@@ -81,16 +81,16 @@
 
         <!--Left-sidebar Starts HIGHLIGHT-->
         <div class="imp-links">
-          <a href="https://indianexpress.com/section/trending/"><img src="../icons/news.png" alt="Trending News">Latest
+          <a href="https://indianexpress.com/section/trending/"  target="_blank"><img src="../icons/news.png" alt="Trending News">Latest
             News</a>
-          <a href="../friends-overview/index.php" target="_blank"><img src="../icons/friends.png" alt="Friends">Friends</a>
+          <a href="../friends-overview/index.php"><img src="../icons/friends.png" alt="Friends">Friends</a>
           
         </div>
 
         <div class="shortcut-links">
           <p>Shortcuts</p>
           <!-- <a href="#"><img src="Images/shortcut-1.png">Stories</a> -->
-          <a href="../profile/prfile-page.php"><img src="../icons/shortcut-2.png">Posts</a>
+          <a href="../profile/profile-page.php"><img src="../icons/shortcut-2.png">Posts</a>
           <a href="../friends-overview/index.php"><img src="../icons/shortcut-3.png">Contacts</a>
           
         </div>

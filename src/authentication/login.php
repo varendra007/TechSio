@@ -44,7 +44,7 @@
                 <div class="field input password">
                     <label for="">Password<font style="color: red;">*</font><label>
                     <input type="password" id="user_password" name="password" placeholder="Enter Password" required>
-                    <i class="fa fa-eye"></i>
+                    <!-- <i class="fa fa-eye"></i> -->
                 </div>
                 <div class="field">
                     <input type="submit" class="login__btn__submit" value="Continue to Chat">

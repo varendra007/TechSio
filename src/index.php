@@ -56,7 +56,7 @@
                 <div class="field input password">
                     <label for="">Password<font style="color: red;">*</font></label>
                     <input type="text" name="password" placeholder="Enter Password" required>
-                    <i class="fa fa-eye"></i>
+                    <!-- <i class="fa fa-eye"></i> -->
                 </div>
                 <div class="field">
                     <label for="">Select Image<font style="color: red;">*</font></label>
