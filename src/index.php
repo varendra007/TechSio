@@ -70,7 +70,7 @@
             <div class="link">Already signed up? <a href="./authentication/login.php">Login now</a></div>
         </section>
     </div>
-        <h2 class="gradient-text" style = "position:absolute; bottom: 10px; right:10px;">TECH PHATNTOMS</h2>
+        <h2 class="gradient-text" style = "position:absolute; bottom: 10px; right:10px;">TECH PHANTOMS</h2>
 
     <script src="script.js" async defer></script>
 </body>

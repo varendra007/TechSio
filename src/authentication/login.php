@@ -23,7 +23,7 @@
         <!-- <h3>kasdf</h3> -->
         <a href="../index.php">SIGNUP</a>
         <a href="login.php">SIGNIN</a>
-        <a href="../media/new-post.php"></a>
+        <!-- <a href="../media/new-post.php"></a> -->
 
     </div>
 
@@ -57,7 +57,7 @@
         </section>
 
     </div>
-    <h2 class="gradient-text" style = "position:absolute; bottom: 10px; right:10px;">TECH PHATNTOMS</h2>
+    <h2 class="gradient-text" style = "position:absolute; bottom: 10px; right:10px;">TECH PHANTOMS</h2>
     <script src="login.js" async defer></script>
 </body>
 
